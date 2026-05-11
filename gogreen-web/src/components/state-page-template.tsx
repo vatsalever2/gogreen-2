@@ -70,7 +70,7 @@ export function StatePageTemplate({ data }: { data: StatePageData }) {
               <div className="text-[11px] uppercase tracking-[0.18em] text-muted font-mono">
                 Local context
               </div>
-              <h2 className="mt-4 font-display text-[34px] sm:text-[44px] leading-[1.02] tracking-tight">
+              <h2 className="mt-4 font-display text-[28px] sm:text-[44px] leading-[1.05] tracking-tight">
                 Engineering, electrical and installation, with crews on the ground in {data.name}.
               </h2>
             </div>
@@ -101,7 +101,7 @@ export function StatePageTemplate({ data }: { data: StatePageData }) {
           <div className="text-[11px] uppercase tracking-[0.18em] text-muted font-mono">
             Project types
           </div>
-          <h2 className="mt-4 font-display text-[34px] sm:text-[48px] leading-[1.02] tracking-tight max-w-2xl">
+          <h2 className="mt-4 font-display text-[28px] sm:text-[48px] leading-[1.05] tracking-tight max-w-2xl">
             What we deliver in <span className="italic text-accent">{data.name}.</span>
           </h2>
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-line border border-line rounded-3xl overflow-hidden">
@@ -125,7 +125,7 @@ export function StatePageTemplate({ data }: { data: StatePageData }) {
               <div className="text-[11px] uppercase tracking-[0.18em] text-muted font-mono">
                 Certifications valid in {data.code}
               </div>
-              <h2 className="mt-4 font-display text-[34px] sm:text-[44px] leading-[1.02] tracking-tight">
+              <h2 className="mt-4 font-display text-[28px] sm:text-[44px] leading-[1.05] tracking-tight">
                 Local credentials.
               </h2>
             </div>

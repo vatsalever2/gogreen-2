@@ -41,7 +41,7 @@ export function WhySection() {
   const scale = useTransform(scrollYProgress, [0, 1], [1.05, 1.15]);
 
   return (
-    <section ref={ref} className="py-16 lg:py-20 bg-surface relative overflow-hidden">
+    <section ref={ref} className="py-14 sm:py-16 lg:py-20 bg-surface relative overflow-hidden">
       <div className="bg-grid-fine absolute inset-0 opacity-40" aria-hidden />
       <Container size="wide" className="relative">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
@@ -55,7 +55,7 @@ export function WhySection() {
               }
               description="Most projects don't fail in design. They fail in the gap between what the engineer drew and what the field installed. We close that gap."
             />
-            <div className="mt-8 relative aspect-[4/3] max-w-[420px] rounded-2xl overflow-hidden border border-line">
+            <div className="mt-8 relative aspect-[4/3] max-w-[420px] mx-auto lg:mx-0 rounded-2xl overflow-hidden border border-line">
               <motion.div style={{ y, scale }} className="absolute inset-0 will-change-transform">
                 <Image
                   src="/images/working-2.jpg"
@@ -90,7 +90,7 @@ export function WhySection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-80px" }}
                   transition={{ duration: 0.6, delay: i * 0.08 }}
-                  className="bg-white p-6 lg:px-8 lg:py-7 flex gap-6 lg:gap-8"
+                  className="bg-white p-5 sm:p-6 lg:px-8 lg:py-7 flex gap-4 sm:gap-6 lg:gap-8"
                 >
                   <div className="shrink-0">
                     <div className="size-12 rounded-xl border border-line inline-flex items-center justify-center text-accent">
@@ -101,7 +101,7 @@ export function WhySection() {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-display text-[24px] sm:text-[28px] leading-[1.1] tracking-tight">
+                    <h3 className="font-display text-[20px] sm:text-[28px] leading-[1.15] tracking-tight">
                       {r.title}
                     </h3>
                     <p className="mt-3 text-[15px] leading-relaxed text-muted text-pretty max-w-[52ch]">

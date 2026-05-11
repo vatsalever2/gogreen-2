@@ -42,7 +42,7 @@ const cols = [
 
 export function Footer() {
   return (
-    <footer className="relative bg-ink text-white pt-24 pb-10 mt-32 overflow-hidden">
+    <footer className="relative bg-ink text-white pt-16 sm:pt-20 lg:pt-24 pb-10 mt-16 sm:mt-24 lg:mt-32 overflow-hidden">
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.04]"
         style={{
@@ -53,8 +53,8 @@ export function Footer() {
         aria-hidden
       />
       <Container size="wide">
-        <div className="flex flex-col gap-16">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div className="flex flex-col gap-12 sm:gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-12">
             <div className="lg:col-span-5">
               <Logo variant="light" />
               <p className="mt-6 text-[15px] leading-relaxed text-white/60 max-w-md text-pretty">

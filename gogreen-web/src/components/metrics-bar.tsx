@@ -15,14 +15,14 @@ const metrics = [
 
 export function MetricsBar() {
   return (
-    <section className="py-24 lg:py-32 bg-surface relative">
+    <section className="py-16 sm:py-20 lg:py-32 bg-surface relative">
       <Container size="wide">
         <div className="mb-12 flex items-end justify-between gap-8 flex-wrap">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-muted font-mono">
               <span className="h-px w-6 bg-accent" /> By the numbers
             </div>
-            <h2 className="mt-5 font-display text-[34px] sm:text-[44px] lg:text-[56px] leading-[1.02] tracking-tight text-balance">
+            <h2 className="mt-5 font-display text-[28px] sm:text-[44px] lg:text-[56px] leading-[1.05] tracking-tight text-balance">
               Track record, <span className="italic text-accent">measured.</span>
             </h2>
           </div>
@@ -77,14 +77,14 @@ function Metric({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ delay: index * 0.05, duration: 0.5 }}
-      className="bg-white p-8 lg:p-10 flex flex-col gap-2 min-h-[200px]"
+      className="bg-white p-6 sm:p-8 lg:p-10 flex flex-col gap-2 min-h-[180px] sm:min-h-[200px]"
     >
       <div className="text-[10px] uppercase tracking-[0.2em] text-muted-2 font-mono">
         0{index + 1}
       </div>
-      <div className="font-display text-[48px] sm:text-[60px] lg:text-[72px] leading-none tracking-tight tabular mt-3">
+      <div className="font-display text-[40px] sm:text-[60px] lg:text-[72px] leading-none tracking-tight tabular mt-3">
         {n.toLocaleString()}
-        <span className="text-[20px] sm:text-[22px] text-muted-2 ml-1 align-baseline">{suffix}</span>
+        <span className="text-[18px] sm:text-[22px] text-muted-2 ml-1 align-baseline">{suffix}</span>
       </div>
       <div className="mt-auto pt-6">
         <div className="font-medium text-[14px] tracking-tight">{label}</div>

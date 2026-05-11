@@ -4,7 +4,7 @@ export const site = {
   domain: "www.gogreensolutions.co",
   url: "https://www.gogreensolutions.co",
   email: "contact@gogreensolutions.co",
-  phone: "(t) 571) 678-2244",
+  phone: "+1 (571) 678-2244",
   phoneHref: "tel:+15716782244",
   address: {
     street: "201 Elden Street, Suite 203",

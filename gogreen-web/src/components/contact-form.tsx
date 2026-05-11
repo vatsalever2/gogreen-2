@@ -125,14 +125,14 @@ export function ContactForm({ minimal = false }: { minimal?: boolean }) {
         </div>
       ))}
 
-      <div className="sm:col-span-2 flex items-center justify-between gap-6 mt-2">
+      <div className="sm:col-span-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-6 mt-2">
         <p className="text-[12px] text-muted">
           By submitting you agree to be contacted by GoGreen Solutions about your inquiry.
         </p>
         <button
           type="submit"
           disabled={state === "submitting"}
-          className="inline-flex items-center gap-2 h-12 px-6 rounded-full bg-ink text-white text-sm font-medium tracking-tight hover:bg-accent transition-colors disabled:opacity-60"
+          className="self-start sm:self-auto shrink-0 inline-flex items-center gap-2 h-12 px-6 rounded-full bg-ink text-white text-sm font-medium tracking-tight hover:bg-accent transition-colors disabled:opacity-60"
         >
           {state === "submitting" ? "Sending…" : (
             <>

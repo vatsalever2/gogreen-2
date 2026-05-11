@@ -9,9 +9,9 @@ import { site } from "@/lib/site";
 
 export function StatesSection() {
   return (
-    <section className="py-24 lg:py-32">
+    <section className="py-16 sm:py-20 lg:py-32">
       <Container size="wide">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-14">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 mb-10 sm:mb-14">
           <div className="lg:col-span-7">
             <SectionHeading
               eyebrow="Service Areas"
@@ -24,7 +24,7 @@ export function StatesSection() {
             />
           </div>
           <div className="lg:col-span-5 lg:pt-6">
-            <div className="aspect-[5/4] relative">
+            <div className="aspect-[5/4] relative max-w-md mx-auto lg:max-w-none">
               <MapMidAtlantic />
             </div>
           </div>
@@ -45,7 +45,7 @@ export function StatesSection() {
               >
                 <div className="flex items-start justify-between">
                   <div>
-                    <div className="font-display text-[44px] sm:text-[56px] leading-none tracking-tight">
+                    <div className="font-display text-[38px] sm:text-[56px] leading-none tracking-tight">
                       {s.code}
                     </div>
                     <div className="mt-3 text-[15px] font-medium tracking-tight">

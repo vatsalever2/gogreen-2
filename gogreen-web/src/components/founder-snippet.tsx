@@ -7,9 +7,9 @@ import { ButtonLink } from "@/components/button";
 
 export function FounderSnippet() {
   return (
-    <section className="py-24 lg:py-32">
+    <section className="py-16 sm:py-20 lg:py-32">
       <Container size="wide">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-12 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -17,7 +17,7 @@ export function FounderSnippet() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-5 relative"
           >
-            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-line">
+            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-line max-w-[480px] mx-auto lg:mx-0">
               <Image
                 src="/images/founder-madan.jpg"
                 alt="Madhan Kumar Nagella, Founder & CEO of GoGreen Solutions"
@@ -44,7 +44,7 @@ export function FounderSnippet() {
             <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-muted font-mono">
               <span className="h-px w-6 bg-accent" /> Founder
             </div>
-            <h2 className="mt-5 font-display text-[34px] sm:text-[44px] lg:text-[56px] leading-[1.02] tracking-tight text-balance">
+            <h2 className="mt-5 font-display text-[28px] sm:text-[44px] lg:text-[56px] leading-[1.05] tracking-tight text-balance">
               &ldquo;The work doesn&apos;t lie. <span className="italic text-accent pr-2 md:pr-3">The field tells you</span> if the engineering was honest.&rdquo;
             </h2>
             <p className="mt-7 text-[16px] leading-relaxed text-muted max-w-2xl text-pretty">

@@ -46,9 +46,9 @@ export function SectionHeading({
         className={cn(
           "font-display tracking-tight text-balance",
           size === "default" &&
-            "text-[34px] sm:text-[44px] lg:text-[56px] leading-[1.02]",
+            "text-[28px] sm:text-[44px] lg:text-[56px] leading-[1.05]",
           size === "large" &&
-            "text-[44px] sm:text-[60px] lg:text-[76px] leading-[0.98]",
+            "text-[34px] sm:text-[60px] lg:text-[76px] leading-[1]",
         )}
       >
         {title}

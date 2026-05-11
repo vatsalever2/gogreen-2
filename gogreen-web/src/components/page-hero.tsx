@@ -25,7 +25,7 @@ export function PageHero({
   return (
     <section
       className={cn(
-        "relative pt-36 pb-16 lg:pt-44 lg:pb-24 overflow-hidden",
+        "relative pt-28 pb-12 sm:pt-36 sm:pb-16 lg:pt-44 lg:pb-24 overflow-hidden",
         className,
       )}
     >
@@ -76,7 +76,7 @@ export function PageHero({
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.05, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-5 font-display text-[44px] sm:text-[60px] lg:text-[84px] leading-[0.96] tracking-tight text-balance"
+            className="mt-5 font-display text-[36px] sm:text-[60px] lg:text-[84px] leading-[0.98] tracking-tight text-balance"
           >
             {title}
           </motion.h1>

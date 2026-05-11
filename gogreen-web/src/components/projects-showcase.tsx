@@ -47,7 +47,7 @@ const projects: Project[] = [
 
 export function ProjectsShowcase() {
   return (
-    <section className="py-24 lg:py-32 bg-ink text-white relative overflow-hidden">
+    <section className="py-16 sm:py-20 lg:py-32 bg-ink text-white relative overflow-hidden">
       <div
         className="absolute inset-0 opacity-[0.04]"
         style={{
@@ -63,7 +63,7 @@ export function ProjectsShowcase() {
             <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-white/50 font-medium font-mono">
               <span className="h-px w-6 bg-accent" /> Recent execution
             </div>
-            <h2 className="mt-5 font-display text-[36px] sm:text-[48px] lg:text-[64px] leading-[1.02] tracking-tight text-balance">
+            <h2 className="mt-5 font-display text-[32px] sm:text-[48px] lg:text-[64px] leading-[1.02] tracking-tight text-balance">
               Built to perform <span className="italic text-accent">long after</span> commissioning.
             </h2>
           </div>
@@ -113,7 +113,7 @@ function ProjectRow({
   const flip = index % 2 === 1;
 
   return (
-    <div ref={ref} className="py-6 lg:py-16">
+    <div ref={ref} className="py-8 sm:py-10 lg:py-16">
       <Container size="wide">
         <div
           className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center ${flip ? "lg:[&>*:first-child]:order-2" : ""
@@ -147,7 +147,7 @@ function ProjectRow({
             <div className="text-[11px] uppercase tracking-[0.18em] text-white/40 font-mono">
               {project.spec}
             </div>
-            <h3 className="mt-4 font-display text-[30px] sm:text-[36px] lg:text-[44px] leading-[1.05] tracking-tight">
+            <h3 className="mt-4 font-display text-[26px] sm:text-[36px] lg:text-[44px] leading-[1.05] tracking-tight">
               {project.title}
             </h3>
             <p className="mt-4 text-[15.5px] leading-relaxed text-white/70 max-w-[48ch]">

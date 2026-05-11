@@ -53,7 +53,7 @@ export default function BlogPage() {
                 {new Date(articles[0].date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
                 · {articles[0].readMin} min read
               </div>
-              <h2 className="mt-5 font-display text-[34px] sm:text-[40px] lg:text-[48px] leading-[1.05] tracking-tight text-balance group-hover:text-accent transition-colors">
+              <h2 className="mt-5 font-display text-[26px] sm:text-[40px] lg:text-[48px] leading-[1.05] tracking-tight text-balance group-hover:text-accent transition-colors">
                 {articles[0].title}
               </h2>
               <p className="mt-5 text-[16px] leading-relaxed text-muted text-pretty">

@@ -163,7 +163,7 @@ export default function WhyGoGreenPage() {
               <div className="text-[11px] uppercase tracking-[0.18em] text-muted font-mono">
                 Credentials
               </div>
-              <h2 className="mt-4 font-display text-[34px] sm:text-[44px] leading-[1.05] tracking-tight">
+              <h2 className="mt-4 font-display text-[28px] sm:text-[44px] leading-[1.05] tracking-tight">
                 Certified across <span className="italic text-accent">every</span> system we install.
               </h2>
               <p className="mt-5 text-[15px] leading-relaxed text-muted max-w-md text-pretty">

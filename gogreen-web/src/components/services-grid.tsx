@@ -26,9 +26,9 @@ const serviceImages = [
 
 export function ServicesGrid() {
   return (
-    <section className="py-24 lg:py-32">
+    <section className="py-16 sm:py-20 lg:py-32">
       <Container size="wide">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 mb-14">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-16 mb-10 sm:mb-14">
           <div className="lg:col-span-7">
             <SectionHeading
               eyebrow="Capabilities"

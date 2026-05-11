@@ -57,7 +57,7 @@ export default function AboutPage() {
               <div className="text-[11px] uppercase tracking-[0.18em] text-muted font-mono">
                 Founder
               </div>
-              <h2 className="mt-4 font-display text-[34px] sm:text-[44px] leading-[1.05] tracking-tight">
+              <h2 className="mt-4 font-display text-[28px] sm:text-[44px] leading-[1.05] tracking-tight">
                 Madhan Kumar Nagella
               </h2>
               <div className="mt-3 text-[14px] text-muted">
@@ -125,7 +125,7 @@ export default function AboutPage() {
               <div className="text-[11px] uppercase tracking-[0.18em] text-muted font-mono">
                 Milestones
               </div>
-              <h2 className="mt-4 font-display text-[34px] sm:text-[48px] leading-[1.02] tracking-tight">
+              <h2 className="mt-4 font-display text-[28px] sm:text-[48px] leading-[1.05] tracking-tight">
                 A track record measured in <span className="italic text-accent">megawatts.</span>
               </h2>
             </div>
@@ -160,7 +160,7 @@ export default function AboutPage() {
               <div className="text-[11px] uppercase tracking-[0.18em] text-muted font-mono">
                 Credentials
               </div>
-              <h2 className="mt-4 font-display text-[34px] sm:text-[44px] leading-[1.05] tracking-tight">
+              <h2 className="mt-4 font-display text-[28px] sm:text-[44px] leading-[1.05] tracking-tight">
                 Certifications & licenses.
               </h2>
               <p className="mt-5 text-[15px] leading-relaxed text-muted max-w-md text-pretty">

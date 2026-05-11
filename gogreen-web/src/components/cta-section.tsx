@@ -17,7 +17,7 @@ export function CtaSection() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "-15%"]);
 
   return (
-    <section ref={ref} className="relative py-24 lg:py-32 overflow-hidden">
+    <section ref={ref} className="relative py-16 sm:py-20 lg:py-32 overflow-hidden">
       <Container size="wide">
         <div className="relative rounded-3xl overflow-hidden border border-line bg-ink text-white">
           <motion.div style={{ y }} className="absolute inset-0 will-change-transform">
@@ -40,13 +40,13 @@ export function CtaSection() {
             aria-hidden
           />
 
-          <div className="relative px-8 py-20 sm:px-12 sm:py-24 lg:px-20 lg:py-28">
+          <div className="relative px-6 py-14 sm:px-12 sm:py-24 lg:px-20 lg:py-28">
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-white/60 font-mono">
                 <span className="h-px w-6 bg-accent" />
                 Ready to start
               </div>
-              <h2 className="mt-5 font-display text-[42px] sm:text-[60px] lg:text-[80px] leading-[0.98] tracking-tight text-balance">
+              <h2 className="mt-5 font-display text-[34px] sm:text-[60px] lg:text-[80px] leading-[1] tracking-tight text-balance">
                 Let&apos;s engineer your next{" "}
                 <span className="italic text-accent">solar project</span>.
               </h2>

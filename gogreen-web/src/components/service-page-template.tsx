@@ -92,7 +92,7 @@ export function ServicePageTemplate({ data }: { data: ServicePageData }) {
               <div className="text-[11px] uppercase tracking-[0.18em] text-muted font-mono">
                 Overview
               </div>
-              <h2 className="mt-4 font-display text-[34px] sm:text-[44px] leading-[1.05] tracking-tight">
+              <h2 className="mt-4 font-display text-[28px] sm:text-[44px] leading-[1.05] tracking-tight">
                 What we deliver.
               </h2>
             </div>
@@ -127,7 +127,7 @@ export function ServicePageTemplate({ data }: { data: ServicePageData }) {
               <div className="text-[11px] uppercase tracking-[0.18em] text-muted font-mono">
                 Scope
               </div>
-              <h2 className="mt-4 font-display text-[34px] sm:text-[44px] leading-[1.05] tracking-tight">
+              <h2 className="mt-4 font-display text-[28px] sm:text-[44px] leading-[1.05] tracking-tight">
                 {data.scope.title}
               </h2>
             </div>
@@ -161,7 +161,7 @@ export function ServicePageTemplate({ data }: { data: ServicePageData }) {
               <div className="text-[11px] uppercase tracking-[0.18em] text-muted font-mono">
                 Detail
               </div>
-              <h2 className="mt-4 font-display text-[34px] sm:text-[44px] leading-[1.05] tracking-tight">
+              <h2 className="mt-4 font-display text-[28px] sm:text-[44px] leading-[1.05] tracking-tight">
                 {data.details.title}
               </h2>
               <p className="mt-5 text-[16px] leading-relaxed text-muted text-pretty max-w-md">
@@ -222,7 +222,7 @@ export function ServicePageTemplate({ data }: { data: ServicePageData }) {
               <div className="text-[11px] uppercase tracking-[0.18em] text-muted font-mono">
                 FAQ
               </div>
-              <h2 className="mt-4 font-display text-[34px] sm:text-[44px] leading-[1.05] tracking-tight">
+              <h2 className="mt-4 font-display text-[28px] sm:text-[44px] leading-[1.05] tracking-tight">
                 Common questions.
               </h2>
             </div>
@@ -275,9 +275,9 @@ export function ServicePageTemplate({ data }: { data: ServicePageData }) {
 
       <section className="py-16 lg:py-24">
         <Container size="wide">
-          <div className="rounded-3xl border border-line bg-white p-10 lg:p-16 flex flex-col lg:flex-row items-start lg:items-center gap-8 justify-between">
+          <div className="rounded-3xl border border-line bg-white p-7 sm:p-10 lg:p-16 flex flex-col lg:flex-row items-start lg:items-center gap-8 justify-between">
             <div className="max-w-xl">
-              <h3 className="font-display text-[28px] sm:text-[36px] leading-[1.05] tracking-tight">
+              <h3 className="font-display text-[24px] sm:text-[36px] leading-[1.1] tracking-tight">
                 Ready for a <span className="italic text-accent">technical conversation?</span>
               </h3>
               <p className="mt-4 text-[15px] leading-relaxed text-muted">
