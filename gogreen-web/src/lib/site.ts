@@ -4,8 +4,8 @@ export const site = {
   domain: "www.gogreensolutions.co",
   url: "https://www.gogreensolutions.co",
   email: "contact@gogreensolutions.co",
-  phone: "+1 (551) 689-6710",
-  phoneHref: "tel:+15516896710",
+  phone: "(t) 571) 678-2244",
+  phoneHref: "tel:+15716782244",
   address: {
     street: "201 Elden Street, Suite 203",
     city: "Herndon",

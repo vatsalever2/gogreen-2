@@ -82,12 +82,14 @@ export default function ContactPage() {
 
               <div className="mt-10 rounded-2xl overflow-hidden border border-line aspect-[16/9] relative">
                 <iframe
-                  src="https://www.google.com/maps?q=201+Elden+Street,+Suite+203,+Herndon,+VA+20170&output=embed"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.1618267146328!2d-77.36954709999999!3d38.9659727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b63763e788f171%3A0x580e09e3413e7b1e!2sGoGreen%20Solutions%20INC!5e0!3m2!1sen!2sin!4v1778497811231!5m2!1sen!2sin"
                   className="absolute inset-0 size-full"
+                  style={{ border: 0 }}
+                  allowFullScreen
                   loading="lazy"
-                  title="GoGreen Solutions HQ, Herndon, VA"
                   referrerPolicy="no-referrer-when-downgrade"
-                />
+                  title="GoGreen Solutions INC"
+                ></iframe>
               </div>
               <div className="mt-3 inline-flex items-center gap-2 text-[12.5px] text-muted">
                 <MapPin className="size-3.5 text-accent" />
