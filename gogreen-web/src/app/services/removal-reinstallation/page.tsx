@@ -11,11 +11,6 @@ const data: ServicePageData = {
   slug: "removal-reinstallation",
   eyebrow: "Removal & Reinstallation · R&R",
   title: "Removal & Reinstallation",
-  tagline: (
-    <>
-      Re-roof. Re-install. <span className="italic text-accent">Recommission.</span>
-    </>
-  ),
   description:
     "When a roof needs replacement or a system needs upgrading, R&R is rarely simple. We coordinate removal, roofing, reinstall, and recommissioning as one continuous engagement.",
   heroImage: "/images/working-2.jpg",
