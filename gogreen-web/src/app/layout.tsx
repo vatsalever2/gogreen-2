@@ -1,0 +1,81 @@
+import type { Metadata } from "next";
+import { Inter, Inter_Tight, JetBrains_Mono } from "next/font/google";
+import "./globals.css";
+import { SmoothScroll } from "@/components/smooth-scroll";
+import { Nav } from "@/components/nav";
+import { Footer } from "@/components/footer";
+import { OrganizationJsonLd, LocalBusinessJsonLd } from "@/components/structured-data";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const display = Inter_Tight({
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800"],
+});
+
+const jbMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono-jb",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.gogreensolutions.co"),
+  title: {
+    default: "GoGreen Solutions, Engineering-Driven Solar EPC | Mid-Atlantic",
+    template: "%s | GoGreen Solutions",
+  },
+  description:
+    "Commercial, distributed and residential solar EPC, BESS, decommissioning and R&R across VA, MD, DC, PA, WV, DE. 5,000+ projects. 54+ MW installed. 25-year workmanship warranty.",
+  keywords: [
+    "Solar EPC",
+    "Commercial Solar",
+    "BESS",
+    "Decommissioning",
+    "Removal & Reinstallation",
+    "Mid-Atlantic Solar",
+    "Virginia Solar",
+    "Maryland Solar",
+    "DC Solar",
+    "NABCEP",
+  ],
+  authors: [{ name: "GoGreen Solutions INC" }],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.gogreensolutions.co",
+    title: "GoGreen Solutions, Engineering-Driven Solar EPC",
+    description:
+      "Engineering-driven Solar EPC delivering commercial, DG and residential projects across the Mid-Atlantic with precision, safety and field-first execution.",
+    siteName: "GoGreen Solutions",
+  },
+  robots: { index: true, follow: true },
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html
+      lang="en"
+      className={`${inter.variable} ${jbMono.variable} ${display.variable}`}
+    >
+      <body className="bg-bg text-ink antialiased min-h-dvh flex flex-col">
+        <OrganizationJsonLd />
+        <LocalBusinessJsonLd />
+        <SmoothScroll />
+        <Nav />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
