@@ -150,7 +150,7 @@ function MapMidAtlantic() {
           <animate attributeName="opacity" values="0.2;0;0.2" dur="2.4s" repeatCount="indefinite" />
         </circle>
         <circle cx="300" cy="282" r="4" fill="#1e7f5c" />
-        <text x="310" y="286" fontSize="9" fontFamily="var(--font-mono)" fill="#111111" letterSpacing="1">
+        <text x="310" y="286" fontSize="9" fontFamily="var(--font-mono)" fill="#1a1a1a" letterSpacing="1">
           HERNDON · HQ
         </text>
       </motion.g>
@@ -171,8 +171,9 @@ function MapMidAtlantic() {
           y={l.y}
           fontSize="11"
           fontFamily="var(--font-mono)"
-          fill="#111111"
-          fontWeight="600"
+          fill="#1a1a1a"
+          letterSpacing="2"
+          fontWeight="500"
         >
           {l.code}
         </text>
