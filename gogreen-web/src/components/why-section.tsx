@@ -67,7 +67,7 @@ export function WhySection() {
               </motion.div>
               <div className="absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent" />
               <div className="absolute bottom-5 left-5 right-5 text-white">
-                <div className="text-[11px] uppercase tracking-[0.18em] font-mono opacity-80">
+                <div className="text-[11px] uppercase tracking-[0.18em] font-mono">
                   Project · DG · 1.2 MW
                 </div>
                 <div className="mt-1 font-display text-[20px] leading-tight">

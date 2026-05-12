@@ -60,14 +60,14 @@ export function ProjectsShowcase() {
       <Container size="wide" className="relative">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-14">
           <div className="lg:col-span-7">
-            <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-white/50 font-medium font-mono">
+            <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-white/75 font-medium font-mono">
               <span className="h-px w-6 bg-accent" /> Recent execution
             </div>
             <h2 className="mt-5 font-display text-[32px] sm:text-[48px] lg:text-[64px] leading-[1.02] tracking-tight text-balance">
               Built to perform <span className="italic text-[#2fba82]">long after</span> commissioning.
             </h2>
           </div>
-          <div className="lg:col-span-5 lg:pt-6 text-[15.5px] leading-relaxed text-white/65 text-pretty">
+          <div className="lg:col-span-5 lg:pt-6 text-[15.5px] leading-relaxed text-white/80 text-pretty">
             From single-megawatt commercial arrays to integrated solar-plus-storage systems -
             every project documented, commissioned and supported by our in-house team.
           </div>
@@ -77,7 +77,7 @@ export function ProjectsShowcase() {
       <ProjectStack projects={projects} />
 
       <Container size="wide" className="relative mt-12 flex items-center justify-between">
-        <div className="text-[13px] text-white/50 font-mono uppercase tracking-[0.16em]">
+        <div className="text-[13px] text-white/75 font-mono uppercase tracking-[0.16em]">
           54+ MW · 5,000+ projects · 7 states
         </div>
       </Container>
@@ -144,13 +144,13 @@ function ProjectRow({
             </div>
           </motion.div>
           <div className="lg:col-span-5">
-            <div className="text-[11px] uppercase tracking-[0.18em] text-white/40 font-mono">
+            <div className="text-[11px] uppercase tracking-[0.18em] text-white/70 font-mono">
               {project.spec}
             </div>
             <h3 className="mt-4 font-display text-[26px] sm:text-[36px] lg:text-[44px] leading-[1.05] tracking-tight">
               {project.title}
             </h3>
-            <p className="mt-4 text-[15.5px] leading-relaxed text-white/70 max-w-[48ch]">
+            <p className="mt-4 text-[15.5px] leading-relaxed text-white/85 max-w-[48ch]">
               {project.desc}
             </p>
             <button className="mt-6 inline-flex items-center gap-2 text-sm font-medium border-b border-accent pb-1 hover:gap-3 transition-all">

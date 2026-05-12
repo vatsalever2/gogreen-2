@@ -42,7 +42,7 @@ export function CtaSection() {
 
           <div className="relative px-6 py-14 sm:px-12 sm:py-24 lg:px-20 lg:py-28">
             <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-white/60 font-mono">
+              <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-white/80 font-mono">
                 <span className="h-px w-6 bg-accent" />
                 Ready to start
               </div>
@@ -50,7 +50,7 @@ export function CtaSection() {
                 Let&apos;s engineer your next{" "}
                 <span className="italic text-[#2fba82]">solar project</span>.
               </h2>
-              <p className="mt-7 text-[16.5px] sm:text-[18px] leading-relaxed text-white/70 max-w-2xl text-pretty">
+              <p className="mt-7 text-[16.5px] sm:text-[18px] leading-relaxed text-white/85 max-w-2xl text-pretty">
                 Free assessment. 48-hour response. Whether you&apos;re scoping a
                 commercial array, evaluating an R&amp;R, or upgrading to BESS, our
                 engineering team will respond.
@@ -59,7 +59,7 @@ export function CtaSection() {
                 <ButtonLink href="/get-assessment" size="lg" withArrow>
                   Get a free assessment
                 </ButtonLink>
-                <ButtonLink href="/contact" size="lg" variant="outline" className="border-white/30 text-white hover:bg-white hover:text-ink">
+                <ButtonLink href="/contact" size="lg" variant="outline" className="border-white/50 text-white hover:bg-white hover:text-ink">
                   Talk to our team
                 </ButtonLink>
               </div>
@@ -73,7 +73,7 @@ export function CtaSection() {
                     <Phone className="size-4" />
                   </span>
                   <span>
-                    <span className="block text-[10px] uppercase tracking-[0.18em] text-white/40 font-mono">Phone</span>
+                    <span className="block text-[10px] uppercase tracking-[0.18em] text-white/70 font-mono">Phone</span>
                     <span className="block text-[14.5px] mt-0.5">{site.phone}</span>
                   </span>
                 </a>
@@ -85,7 +85,7 @@ export function CtaSection() {
                     <Mail className="size-4" />
                   </span>
                   <span>
-                    <span className="block text-[10px] uppercase tracking-[0.18em] text-white/40 font-mono">Email</span>
+                    <span className="block text-[10px] uppercase tracking-[0.18em] text-white/70 font-mono">Email</span>
                     <span className="block text-[14.5px] mt-0.5">{site.email}</span>
                   </span>
                 </a>

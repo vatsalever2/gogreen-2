@@ -58,13 +58,13 @@ export function Footer() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-12">
             <div className="lg:col-span-5">
               <Logo variant="light" />
-              <p className="mt-6 text-[15px] leading-relaxed text-white/60 max-w-md text-pretty">
+              <p className="mt-6 text-[15px] leading-relaxed text-white/80 max-w-md text-pretty">
                 Engineering-driven solar EPC and installation. We engineer, build,
                 and integrate every system, across the Mid-Atlantic, with
                 precision and a field-first approach.
               </p>
 
-              <div className="mt-8 flex flex-col gap-3 text-sm text-white/70">
+              <div className="mt-8 flex flex-col gap-3 text-sm text-white/85">
                 <a
                   href={site.phoneHref}
                   className="inline-flex items-center gap-2.5 hover:text-white transition-colors w-fit"
@@ -102,7 +102,7 @@ export function Footer() {
             <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8 lg:gap-12">
               {cols.map((col) => (
                 <div key={col.title}>
-                  <div className="text-[11px] uppercase tracking-[0.18em] text-white/40 font-medium">
+                  <div className="text-[11px] uppercase tracking-[0.18em] text-white/70 font-medium">
                     {col.title}
                   </div>
                   <ul className="mt-5 flex flex-col gap-3">
@@ -110,7 +110,7 @@ export function Footer() {
                       <li key={l.href}>
                         <Link
                           href={l.href}
-                          className="text-[14px] text-white/75 hover:text-white transition-colors inline-flex items-center gap-1.5 group"
+                          className="text-[14px] text-white/90 hover:text-white transition-colors inline-flex items-center gap-1.5 group"
                         >
                           {l.label}
                           <ArrowUpRight className="size-3 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
@@ -123,7 +123,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-[12px] text-white/45">
+          <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-[12px] text-white/70">
             <div>
               © {new Date().getFullYear()} {site.legalName}. All rights reserved.
             </div>

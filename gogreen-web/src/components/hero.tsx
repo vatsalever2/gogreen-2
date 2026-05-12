@@ -119,7 +119,7 @@ export function Hero() {
              
              <motion.p
                initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.4 }}
-               className="mt-6 text-white/70 max-w-md text-base sm:text-lg leading-relaxed font-medium"
+               className="mt-6 text-white/85 max-w-md text-base sm:text-lg leading-relaxed font-medium"
              >
                We design, procure, and construct premium utility-scale solar farms across the Mid-Atlantic.
              </motion.p>
@@ -130,7 +130,7 @@ export function Hero() {
              >
                <Link href="/get-assessment" className="flex items-center justify-center w-max gap-2 h-12 sm:h-14 px-6 sm:px-8 rounded-full bg-accent text-white text-sm sm:text-base font-medium hover:bg-accent-2 hover:-translate-y-0.5 transition-all shadow-[0_0_20px_rgba(30,127,92,0.4)] group">
                  Get a Free Assessment
-                 <ArrowUpRight className="size-4 text-white/70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                 <ArrowUpRight className="size-4 text-white/85 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                </Link>
              </motion.div>
            </div>
@@ -175,7 +175,7 @@ export function Hero() {
                         className="absolute inset-0 flex items-center justify-center pointer-events-none"
                         aria-hidden="true"
                       >
-                         <span className="text-white/50 font-mono text-[10px] sm:text-xs tracking-[0.3em] uppercase -rotate-90 whitespace-nowrap">
+                         <span className="text-white/75 font-mono text-[10px] sm:text-xs tracking-[0.3em] uppercase -rotate-90 whitespace-nowrap">
                            {img.tag}
                          </span>
                       </motion.div>
@@ -202,7 +202,7 @@ export function Hero() {
                            <div className="font-display font-semibold text-2xl lg:text-3xl xl:text-4xl tracking-tight mb-2">
                              {img.metric}
                            </div>
-                           <div className="text-xs sm:text-sm text-white/70">
+                           <div className="text-xs sm:text-sm text-white/85">
                              {img.desc}
                            </div>
                         </div>
@@ -215,7 +215,7 @@ export function Hero() {
            </div>
 
            {/* RIGHT CONTENT: Mobile/Tablet Horizontal Scroll Gallery */}
-           <div role="region" aria-label="Project gallery" className="block xl:hidden col-span-1 w-[100vw] -mx-6 mt-6 overflow-x-auto snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+           <div role="region" aria-label="Project gallery" tabIndex={0} className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent block xl:hidden col-span-1 w-[100vw] -mx-6 mt-6 overflow-x-auto snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
               <div className="flex gap-4 px-6 w-max pb-8">
                  {HERO_IMAGES.map((img, idx) => (
                    <div key={idx} className="relative w-[85vw] sm:w-[60vw] lg:w-[45vw] h-[45vh] lg:h-[55vh] rounded-[32px] overflow-hidden snap-center border border-white/10 shrink-0 shadow-2xl">
@@ -237,7 +237,7 @@ export function Hero() {
                             <div className="font-display font-semibold text-2xl tracking-tight mb-1">
                               {img.metric}
                            </div>
-                           <div className="text-xs text-white/70 leading-relaxed">
+                           <div className="text-xs text-white/85 leading-relaxed">
                              {img.desc}
                            </div>
                          </div>

@@ -70,7 +70,7 @@ export function Nav() {
         <div
           role="region"
           aria-label="Site information"
-          className="hidden lg:block bg-ink text-white/75 text-[11.5px]"
+          className="hidden lg:block bg-ink text-white/90 text-[11.5px]"
         >
           <div className="mx-auto max-w-[1440px] px-6 sm:px-8 lg:px-10 h-8 flex items-center justify-between">
             <span className="hidden sm:inline-flex items-center gap-2">
