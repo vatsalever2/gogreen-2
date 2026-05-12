@@ -83,7 +83,7 @@ export function Nav() {
                 {site.phone}
               </a>
               <span className="text-white/30 hidden sm:inline" aria-hidden="true">|</span>
-              <span className="hidden sm:inline text-white/60">VA · MD · DC · PA · WV · DE · NJ</span>
+              <span className="hidden sm:inline text-white/80">VA · MD · DC · PA · WV · DE · NJ</span>
             </div>
           </div>
         </div>
