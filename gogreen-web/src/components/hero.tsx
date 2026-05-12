@@ -51,7 +51,7 @@ export function Hero() {
         Hero perfectly fills the viewport minus the scrolling strip (~60px). 
         pt-20 offsets the navbar to ensure true visual centering.
       */}
-      <section className={`relative w-full min-h-[calc(100dvh-64px)] xl:h-[calc(100dvh-136px)] bg-ink flex items-center justify-center pt-12 pb-12 xl:pt-0 xl:pb-0 overflow-hidden ${!isLoaded ? "opacity-0" : "opacity-100 transition-opacity duration-1000"}`}>
+      <section className={`relative w-full min-h-[calc(100dvh-56px)] xl:h-[calc(100dvh-56px)] bg-ink flex items-center justify-center pt-12 pb-12 xl:pt-0 xl:pb-0 overflow-hidden ${!isLoaded ? "opacity-0" : "opacity-100 transition-opacity duration-1000"}`}>
         
         {/* Premium Technical Background */}
         <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-ink">
