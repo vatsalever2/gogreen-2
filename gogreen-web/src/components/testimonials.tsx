@@ -63,7 +63,7 @@ export function Testimonials() {
           </div>
         </div>
 
-        <div tabIndex={0} role="region" aria-label="Client testimonials" className="flex overflow-x-auto snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] -mx-6 px-6 lg:mx-0 lg:px-0 lg:grid lg:grid-cols-3 gap-6 pb-8 lg:pb-0">
+        <div role="region" aria-label="Client testimonials" className="flex overflow-x-auto snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] -mx-6 px-6 lg:mx-0 lg:px-0 lg:grid lg:grid-cols-3 gap-6 pb-8 lg:pb-0">
           {items.map((t, i) => (
             <motion.figure
               key={i}

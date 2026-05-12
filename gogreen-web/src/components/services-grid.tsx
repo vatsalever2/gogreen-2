@@ -53,7 +53,7 @@ export function ServicesGrid() {
           </div>
         </div>
 
-        <div tabIndex={0} role="region" aria-label="Services list" className="flex overflow-x-auto snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] -mx-6 px-6 lg:mx-0 lg:px-0 lg:grid lg:grid-cols-3 gap-4 lg:gap-px lg:bg-line lg:border lg:border-line lg:rounded-3xl pb-8 lg:pb-0">
+        <div role="region" aria-label="Services list" className="flex overflow-x-auto snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] -mx-6 px-6 lg:mx-0 lg:px-0 lg:grid lg:grid-cols-3 gap-4 lg:gap-px lg:bg-line lg:border lg:border-line lg:rounded-3xl pb-8 lg:pb-0">
           {site.services.map((service, i) => {
             const Icon = iconMap[service.icon] ?? Sun;
             return (

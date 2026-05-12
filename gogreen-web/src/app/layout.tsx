@@ -68,6 +68,11 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${jbMono.variable} ${display.variable}`}
     >
+      <head>
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+        <link rel="search" href="/sitemap-page" title="Site Index" />
+        <link rel="help" href="/contact" title="Contact" />
+      </head>
       <body className="bg-bg text-ink antialiased min-h-dvh flex flex-col">
         <OrganizationJsonLd />
         <LocalBusinessJsonLd />

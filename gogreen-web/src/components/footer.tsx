@@ -36,6 +36,7 @@ const cols = [
       { label: "Insights", href: "/blog" },
       { label: "Contact", href: "/contact" },
       { label: "Free Assessment", href: "/get-assessment" },
+      { label: "Sitemap", href: "/sitemap-page" },
     ],
   },
 ];
