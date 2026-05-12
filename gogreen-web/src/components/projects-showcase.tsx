@@ -64,7 +64,7 @@ export function ProjectsShowcase() {
               <span className="h-px w-6 bg-accent" /> Recent execution
             </div>
             <h2 className="mt-5 font-display text-[32px] sm:text-[48px] lg:text-[64px] leading-[1.02] tracking-tight text-balance">
-              Built to perform <span className="italic text-accent">long after</span> commissioning.
+              Built to perform <span className="italic text-[#2fba82]">long after</span> commissioning.
             </h2>
           </div>
           <div className="lg:col-span-5 lg:pt-6 text-[15.5px] leading-relaxed text-white/65 text-pretty">

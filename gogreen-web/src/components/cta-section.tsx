@@ -48,7 +48,7 @@ export function CtaSection() {
               </div>
               <h2 className="mt-5 font-display text-[34px] sm:text-[60px] lg:text-[80px] leading-[1] tracking-tight text-balance">
                 Let&apos;s engineer your next{" "}
-                <span className="italic text-accent">solar project</span>.
+                <span className="italic text-[#2fba82]">solar project</span>.
               </h2>
               <p className="mt-7 text-[16.5px] sm:text-[18px] leading-relaxed text-white/70 max-w-2xl text-pretty">
                 Free assessment. 48-hour response. Whether you&apos;re scoping a

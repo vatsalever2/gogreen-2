@@ -114,7 +114,7 @@ export function Hero() {
                initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.2, delay: 0.2 }}
                className="text-[40px] sm:text-[60px] md:text-[70px] xl:text-[80px] font-display font-semibold tracking-tighter leading-[0.98] text-white text-balance"
              >
-                Solar EPC & installation, <br className="hidden xl:block"/> <span className="text-accent">engineered.</span>
+                Solar EPC & installation, <br className="hidden xl:block"/> <span className="text-[#2fba82]">engineered.</span>
              </motion.h1>
              
              <motion.p
@@ -215,7 +215,7 @@ export function Hero() {
            </div>
 
            {/* RIGHT CONTENT: Mobile/Tablet Horizontal Scroll Gallery */}
-           <div className="block xl:hidden col-span-1 w-[100vw] -mx-6 mt-6 overflow-x-auto snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+           <div tabIndex={0} role="region" aria-label="Project gallery" className="block xl:hidden col-span-1 w-[100vw] -mx-6 mt-6 overflow-x-auto snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
               <div className="flex gap-4 px-6 w-max pb-8">
                  {HERO_IMAGES.map((img, idx) => (
                    <div key={idx} className="relative w-[85vw] sm:w-[60vw] lg:w-[45vw] h-[45vh] lg:h-[55vh] rounded-[32px] overflow-hidden snap-center border border-white/10 shrink-0 shadow-2xl">

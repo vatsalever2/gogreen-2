@@ -68,6 +68,8 @@ export function Nav() {
     <>
       <div
         data-fixed-nav
+        role="region"
+        aria-label="Site information"
         className={cn(
           "fixed inset-x-0 top-0 z-[51] bg-ink text-white/75 text-[11.5px] transition-transform duration-300",
           !scrolled ? "-translate-y-full lg:translate-y-0" : "translate-y-0"
@@ -192,6 +194,9 @@ export function Nav() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Navigation menu"
             className="fixed inset-0 z-[60] bg-white"
           >
             <div className="flex h-16 items-center justify-between px-6 border-b border-line">
