@@ -66,36 +66,32 @@ export function Nav() {
 
   return (
     <>
-      <div
-        data-fixed-nav
-        role="region"
-        aria-label="Site information"
-        className={cn(
-          "fixed inset-x-0 top-0 z-[51] bg-ink text-white/75 text-[11.5px] transition-transform duration-300",
-          !scrolled ? "-translate-y-full lg:translate-y-0" : "translate-y-0"
-        )}
-      >
-        <div className="mx-auto max-w-[1440px] px-6 sm:px-8 lg:px-10 h-8 flex items-center justify-between">
-          <span className="hidden sm:inline-flex items-center gap-2">
-            <span className="size-1 rounded-full bg-accent" />
-            NABCEP PVIP · Master Electrician · Class A Contractor · OSHA Compliant
-          </span>
-          <div className="flex items-center gap-4">
-            <a href={site.phoneHref} className="inline-flex items-center gap-1.5 hover:text-white transition-colors">
-              <Phone className="size-3" />
-              {site.phone}
-            </a>
-            <span className="text-white/30 hidden sm:inline">|</span>
-            <span className="hidden sm:inline text-white/60">VA · MD · DC · PA · WV · DE · NJ</span>
+      <div className="sticky top-0 z-50">
+        <div
+          role="region"
+          aria-label="Site information"
+          className="hidden lg:block bg-ink text-white/75 text-[11.5px]"
+        >
+          <div className="mx-auto max-w-[1440px] px-6 sm:px-8 lg:px-10 h-8 flex items-center justify-between">
+            <span className="hidden sm:inline-flex items-center gap-2">
+              <span className="size-1 rounded-full bg-accent" aria-hidden="true" />
+              NABCEP PVIP · Master Electrician · Class A Contractor · OSHA Compliant
+            </span>
+            <div className="flex items-center gap-4">
+              <a href={site.phoneHref} className="inline-flex items-center gap-1.5 hover:text-white transition-colors">
+                <Phone className="size-3" />
+                {site.phone}
+              </a>
+              <span className="text-white/30 hidden sm:inline" aria-hidden="true">|</span>
+              <span className="hidden sm:inline text-white/60">VA · MD · DC · PA · WV · DE · NJ</span>
+            </div>
           </div>
         </div>
-      </div>
 
       <header
-        data-fixed-nav
         className={cn(
-          "fixed inset-x-0 z-50 bg-white border-b border-line transition-all duration-300",
-          !scrolled ? "top-0 lg:top-8" : "top-8"
+          "bg-white border-b border-line transition-all duration-300",
+          scrolled && "shadow-sm"
         )}
       >
         <div className="mx-auto w-full max-w-[1440px] px-6 sm:px-8 lg:px-10">
@@ -117,7 +113,7 @@ export function Nav() {
                       )}
                     >
                       {item.label}
-                      <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden>
+                      <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true" role="presentation" focusable="false">
                         <path d="m3 4.5 3 3 3-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </button>
@@ -187,6 +183,7 @@ export function Nav() {
           </div>
         </div>
       </header>
+      </div>
 
       <AnimatePresence>
         {mobile && (

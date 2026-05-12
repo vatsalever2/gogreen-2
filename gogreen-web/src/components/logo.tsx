@@ -62,7 +62,9 @@ export function Mark({
       height={size}
       viewBox={`0 0 ${size} ${size}`}
       fill="none"
-      aria-hidden
+      aria-hidden="true"
+      role="presentation"
+      focusable="false"
       className={className}
     >
       <rect x="0" y="0" width={s} height={s} rx="0.5" fill={color} />

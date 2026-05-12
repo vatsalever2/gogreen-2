@@ -48,7 +48,7 @@ export function ServicesGrid() {
             <div className="mt-6 flex items-center gap-3 lg:hidden text-muted text-[10px] font-mono uppercase tracking-[0.2em] font-medium">
               <span className="flex-1 h-px bg-line" />
               Swipe to explore
-              <svg className="size-3 animate-pulse text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+              <svg className="size-3 animate-pulse text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true" role="presentation" focusable="false"><path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </div>
           </div>
         </div>

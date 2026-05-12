@@ -51,7 +51,7 @@ export function Hero() {
         Hero perfectly fills the viewport minus the scrolling strip (~60px). 
         pt-20 offsets the navbar to ensure true visual centering.
       */}
-      <section className={`relative w-full min-h-[calc(100dvh-56px)] xl:h-[calc(100dvh-56px)] bg-ink flex items-center justify-center pt-24 pb-12 xl:pt-20 xl:pb-0 overflow-hidden ${!isLoaded ? "opacity-0" : "opacity-100 transition-opacity duration-1000"}`}>
+      <section className={`relative w-full min-h-[calc(100dvh-64px)] xl:h-[calc(100dvh-96px)] bg-ink flex items-center justify-center pt-12 pb-12 xl:pt-0 xl:pb-0 overflow-hidden ${!isLoaded ? "opacity-0" : "opacity-100 transition-opacity duration-1000"}`}>
         
         {/* Premium Technical Background */}
         <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden bg-ink">
@@ -215,7 +215,7 @@ export function Hero() {
            </div>
 
            {/* RIGHT CONTENT: Mobile/Tablet Horizontal Scroll Gallery */}
-           <div tabIndex={0} role="region" aria-label="Project gallery" className="block xl:hidden col-span-1 w-[100vw] -mx-6 mt-6 overflow-x-auto snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+           <div role="region" aria-label="Project gallery" className="block xl:hidden col-span-1 w-[100vw] -mx-6 mt-6 overflow-x-auto snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
               <div className="flex gap-4 px-6 w-max pb-8">
                  {HERO_IMAGES.map((img, idx) => (
                    <div key={idx} className="relative w-[85vw] sm:w-[60vw] lg:w-[45vw] h-[45vh] lg:h-[55vh] rounded-[32px] overflow-hidden snap-center border border-white/10 shrink-0 shadow-2xl">

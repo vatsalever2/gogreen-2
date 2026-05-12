@@ -101,7 +101,7 @@ export function StatesSection() {
 
 function MapMidAtlantic() {
   return (
-    <svg viewBox="0 0 500 400" className="w-full h-full" aria-hidden>
+    <svg viewBox="0 0 500 400" className="w-full h-full" aria-hidden="true" role="presentation" focusable="false">
       <defs>
         <pattern id="dotmap" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
           <circle cx="1" cy="1" r="0.7" fill="#1a1a1a" opacity="0.18" />

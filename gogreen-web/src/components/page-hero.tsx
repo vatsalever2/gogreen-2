@@ -25,7 +25,7 @@ export function PageHero({
   return (
     <section
       className={cn(
-        "relative pt-28 pb-12 sm:pt-36 sm:pb-16 lg:pt-44 lg:pb-24 overflow-hidden",
+        "relative pt-12 pb-12 sm:pt-16 sm:pb-16 lg:pt-24 lg:pb-24 overflow-hidden",
         className,
       )}
     >
