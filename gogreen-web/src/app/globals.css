@@ -15,6 +15,7 @@
   --color-accent-3: #2a8e6b;
   --color-accent-tint: #e8f3ee;
   --color-accent-on-dark: #2fba82;
+  --color-accent-text: #0f5038;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-display), var(--font-inter), ui-sans-serif, system-ui, sans-serif;

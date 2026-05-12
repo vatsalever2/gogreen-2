@@ -53,8 +53,8 @@ export function StatesSection() {
                     </div>
                   </div>
                   {s.priority && (
-                    <span className="text-[10px] uppercase tracking-[0.18em] text-accent font-mono inline-flex items-center gap-1.5">
-                      <span className="size-1 rounded-full bg-accent" /> Priority
+                    <span className="text-[10px] uppercase tracking-[0.18em] text-accent-text font-mono inline-flex items-center gap-1.5">
+                      <span className="size-1 rounded-full bg-accent-text" /> Priority
                     </span>
                   )}
                 </div>
