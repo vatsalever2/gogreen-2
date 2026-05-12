@@ -48,7 +48,7 @@ export function ServicesGrid() {
             <div className="mt-6 flex items-center gap-3 lg:hidden text-muted-2 text-[10px] font-mono uppercase tracking-[0.2em] font-medium">
               <span className="flex-1 h-px bg-line" />
               Swipe to explore
-              <svg className="size-3 animate-pulse text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+              <svg className="size-3 animate-pulse text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@ export function ServicesGrid() {
                     <ArrowUpRight className="size-5 text-muted-2 -translate-y-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-ink transition-all duration-300" />
                   </div>
                   <div className="mt-12 lg:mt-16">
-                    <div className="text-[11px] uppercase tracking-[0.18em] text-muted-2 font-medium font-mono">
+                    <div className="text-[11px] uppercase tracking-[0.18em] text-muted-2 font-medium font-mono" aria-hidden="true">
                       0{i + 1} · {service.tagline}
                     </div>
                     <h3 className="mt-3 font-display text-[26px] sm:text-[30px] leading-[1.05] tracking-tight group-hover:text-accent transition-colors duration-300">

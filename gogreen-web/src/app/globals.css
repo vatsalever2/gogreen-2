@@ -140,3 +140,11 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+/* WCAG 1.4.10 Reflow — un-fix sticky header at 320 CSS px width (equivalent to 400% zoom on 1280px screen) */
+@media (max-width: 320px) {
+  [data-fixed-nav] {
+    position: static !important;
+    transform: none !important;
+  }
+}

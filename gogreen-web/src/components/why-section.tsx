@@ -96,7 +96,7 @@ export function WhySection() {
                     <div className="size-12 rounded-xl border border-line inline-flex items-center justify-center text-accent">
                       <Icon className="size-5" />
                     </div>
-                    <div className="mt-3 text-[10px] uppercase tracking-[0.2em] text-muted-2 font-mono">
+                    <div className="mt-3 text-[10px] uppercase tracking-[0.2em] text-muted-2 font-mono" aria-hidden="true">
                       0{i + 1}
                     </div>
                   </div>

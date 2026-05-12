@@ -136,10 +136,10 @@ function ProjectRow({
               />
             </motion.div>
             <div className="absolute inset-0 bg-gradient-to-tr from-ink/40 via-transparent to-transparent" />
-            <div className="absolute top-5 left-5 inline-flex items-center gap-2 rounded-full bg-ink/70 backdrop-blur px-3 py-1 text-[10.5px] uppercase tracking-[0.18em] font-mono">
+            <div className="absolute top-5 left-5 inline-flex items-center gap-2 rounded-full bg-ink/70 backdrop-blur px-3 py-1 text-[10.5px] uppercase tracking-[0.18em] font-mono" aria-hidden="true">
               <span className="size-1 rounded-full bg-accent" /> {project.type}
             </div>
-            <div className="absolute bottom-5 right-5 inline-flex items-center gap-2 rounded-full bg-ink/70 backdrop-blur px-3 py-1 text-[10.5px] uppercase tracking-[0.18em] font-mono">
+            <div className="absolute bottom-5 right-5 inline-flex items-center gap-2 rounded-full bg-ink/70 backdrop-blur px-3 py-1 text-[10.5px] uppercase tracking-[0.18em] font-mono" aria-hidden="true">
               {String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
             </div>
           </motion.div>

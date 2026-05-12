@@ -106,7 +106,7 @@ export function ServicePageTemplate({ data }: { data: ServicePageData }) {
                   transition={{ delay: i * 0.06, duration: 0.5 }}
                   className="bg-white p-7"
                 >
-                  <div className="text-[10px] uppercase tracking-[0.2em] text-muted-2 font-mono">
+                  <div className="text-[10px] uppercase tracking-[0.2em] text-muted-2 font-mono" aria-hidden="true">
                     0{i + 1}
                   </div>
                   <h3 className="mt-5 font-display text-[20px] leading-[1.2] tracking-tight">
@@ -180,11 +180,9 @@ export function ServicePageTemplate({ data }: { data: ServicePageData }) {
                       transition={{ delay: i * 0.05 }}
                       className="grid grid-cols-12 items-start py-6 border-b border-line gap-6"
                     >
-                      <div className="col-span-12 sm:col-span-4 text-[10px] uppercase tracking-[0.2em] text-muted-2 font-mono">
-                        {String(i + 1).padStart(2, "0")} ·{" "}
-                        <span className="text-ink-2 font-sans normal-case tracking-normal text-[14.5px] font-medium">
-                          {d.label}
-                        </span>
+                      <div className="col-span-12 sm:col-span-4 text-[14.5px] font-medium text-ink-2">
+                        <span className="text-[10px] uppercase tracking-[0.2em] text-muted-2 font-mono mr-1" aria-hidden="true">{String(i + 1).padStart(2, "0")} ·</span>
+                        {d.label}
                       </div>
                       <div className="col-span-12 sm:col-span-8 text-[14.5px] leading-relaxed text-muted">
                         {d.desc}

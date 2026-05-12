@@ -79,7 +79,7 @@ function Metric({
       transition={{ delay: index * 0.05, duration: 0.5 }}
       className="bg-white p-6 sm:p-8 lg:p-10 flex flex-col gap-2 min-h-[180px] sm:min-h-[200px]"
     >
-      <div className="text-[10px] uppercase tracking-[0.2em] text-muted-2 font-mono">
+      <div className="text-[10px] uppercase tracking-[0.2em] text-muted-2 font-mono" aria-hidden="true">
         0{index + 1}
       </div>
       <div className="font-display text-[40px] sm:text-[60px] lg:text-[72px] leading-none tracking-tight tabular mt-3">

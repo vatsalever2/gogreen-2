@@ -66,7 +66,8 @@ export function Nav() {
 
   return (
     <>
-      <div 
+      <div
+        data-fixed-nav
         className={cn(
           "fixed inset-x-0 top-0 z-[51] bg-ink text-white/75 text-[11.5px] transition-transform duration-300",
           !scrolled ? "-translate-y-full lg:translate-y-0" : "translate-y-0"
@@ -88,10 +89,13 @@ export function Nav() {
         </div>
       </div>
 
-      <header className={cn(
-        "fixed inset-x-0 z-50 bg-white border-b border-line transition-all duration-300",
-        !scrolled ? "top-0 lg:top-8" : "top-8"
-      )}>
+      <header
+        data-fixed-nav
+        className={cn(
+          "fixed inset-x-0 z-50 bg-white border-b border-line transition-all duration-300",
+          !scrolled ? "top-0 lg:top-8" : "top-8"
+        )}
+      >
         <div className="mx-auto w-full max-w-[1440px] px-6 sm:px-8 lg:px-10">
           <div className="flex h-16 items-center justify-between gap-6">
             <Logo />

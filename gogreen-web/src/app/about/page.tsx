@@ -171,7 +171,7 @@ export default function AboutPage() {
             <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-px bg-line border border-line rounded-2xl overflow-hidden">
               {site.certifications.map((c, i) => (
                 <div key={c} className="bg-white p-5 flex items-center gap-3">
-                  <span className="text-[10px] font-mono text-muted-2 tracking-[0.18em] w-6">
+                  <span className="text-[10px] font-mono text-muted-2 tracking-[0.18em] w-6" aria-hidden="true">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <span className="text-[14px] font-medium tracking-tight">{c}</span>

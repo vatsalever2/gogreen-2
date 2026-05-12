@@ -124,7 +124,7 @@ export default function WhyGoGreenPage() {
               const Icon = p.icon;
               return (
                 <div key={p.title} className="bg-white p-8 lg:p-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
-                  <div className="lg:col-span-1 text-[11px] font-mono uppercase tracking-[0.2em] text-muted-2">
+                  <div className="lg:col-span-1 text-[11px] font-mono uppercase tracking-[0.2em] text-muted-2" aria-hidden="true">
                     {String(i + 1).padStart(2, "0")}
                   </div>
                   <div className="lg:col-span-5">

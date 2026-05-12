@@ -107,7 +107,7 @@ export function StatePageTemplate({ data }: { data: StatePageData }) {
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-line border border-line rounded-3xl overflow-hidden">
             {data.projectTypes.map((p, i) => (
               <div key={p.title} className="bg-white p-7 lg:p-8">
-                <div className="text-[10px] uppercase tracking-[0.2em] text-muted-2 font-mono">
+                <div className="text-[10px] uppercase tracking-[0.2em] text-muted-2 font-mono" aria-hidden="true">
                   0{i + 1}
                 </div>
                 <h3 className="mt-5 font-display text-[22px] tracking-tight leading-tight">{p.title}</h3>

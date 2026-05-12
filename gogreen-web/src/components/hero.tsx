@@ -82,9 +82,10 @@ export function Hero() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,#101010_100%)]" />
 
           {/* Massive Outline Text Watermark */}
-          <div 
+          <div
             className="absolute top-1/2 -translate-y-1/2 left-[-2%] text-[40vw] sm:text-[28vw] font-display font-bold leading-none text-transparent tracking-tighter select-none"
             style={{ WebkitTextStroke: '2px rgba(255,255,255,0.06)' }}
+            aria-hidden="true"
           >
             EPC
           </div>
@@ -169,9 +170,10 @@ export function Hero() {
                   {/* Vertical title for unselected panels */}
                   <AnimatePresence>
                     {activeIndex !== idx && (
-                      <motion.div 
+                      <motion.div
                         initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
                         className="absolute inset-0 flex items-center justify-center pointer-events-none"
+                        aria-hidden="true"
                       >
                          <span className="text-white/50 font-mono text-[10px] sm:text-xs tracking-[0.3em] uppercase -rotate-90 whitespace-nowrap">
                            {img.tag}
@@ -191,7 +193,7 @@ export function Hero() {
                         className="absolute bottom-6 left-6 right-6 lg:bottom-8 lg:left-8 lg:right-8"
                       >
                         <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-5 lg:p-6 rounded-3xl text-white shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
-                           <div className="flex items-center gap-2 mb-3">
+                           <div className="flex items-center gap-2 mb-3" aria-hidden="true">
                               <span className="size-1.5 bg-accent rounded-full" />
                               <div className="text-[10px] text-accent tracking-[0.3em] font-mono font-bold uppercase">
                                 {img.tag}
@@ -229,7 +231,7 @@ export function Hero() {
                       
                       <div className="absolute bottom-6 left-6 right-6">
                          <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-5 rounded-2xl text-white">
-                            <div className="text-[10px] text-accent tracking-[0.2em] font-mono font-bold uppercase mb-1">
+                            <div className="text-[10px] text-accent tracking-[0.2em] font-mono font-bold uppercase mb-1" aria-hidden="true">
                               {img.tag}
                             </div>
                             <div className="font-display font-semibold text-2xl tracking-tight mb-1">
