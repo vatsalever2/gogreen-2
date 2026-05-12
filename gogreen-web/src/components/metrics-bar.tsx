@@ -84,7 +84,7 @@ function Metric({
       </div>
       <div className="font-display text-[40px] sm:text-[60px] lg:text-[72px] leading-none tracking-tight tabular mt-3">
         {n.toLocaleString()}
-        <span className="text-[18px] sm:text-[22px] text-muted-2 ml-1 align-baseline">{suffix}</span>
+        <span className="text-[18px] sm:text-[22px] text-muted ml-1 align-baseline">{suffix}</span>
       </div>
       <div className="mt-auto pt-6">
         <div className="font-medium text-[14px] tracking-tight">{label}</div>

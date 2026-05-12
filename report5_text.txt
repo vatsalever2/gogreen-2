@@ -1,0 +1,490 @@
+Your Scan Results
+Domain
+https://gogreen-2.vercel.app
+Date & Time
+12/05/2026, 05:07pm
+Issues Identified
+A
+1
+AA
+4
+AAA
+34
+Recite Me
+Accessibility Scan
+Level A Overview
+www.reciteme.com
+
+This free scan shows you a preview
+dashboard of your findings under
+accessibility rating ‘A’. Start off by
+tackling A-rated “fixes” to boost your
+score and become an accessibility
+hero in no time!
+Website accessibility and compliance made simple. Create a
+website that is built with accessibility in mind and to WCAG
+industry standards, with the help of the Recite Me Accessibility
+Checker.
+How the the Checker Works
+The Recite Me Checker audits back-end and front-end web development processes by running 396
+compliance scans in line with WCAG 2.2 and breaking down the issues you should be working to fix. The
+methodology follows a four-step process to help you increase your accessibility score:
+1. Scan Your Domains
+Start with a scan of your website
+covering WCAG 2.2 success criteria.
+2. Identify Accessibility Issues
+Our intuitive dashboard helps you
+identify the most common accessibility
+issues.
+3. Fix Accessibility Checks
+We show you what to fix for the biggest
+improvement against your internal
+efforts and time.
+4. Track Your Progress
+Track your web accessibility
+improvements over time and manage
+your fix queue.
+Next Steps
+Now it’s time to action your finding using the Recite Me checker and make your website more accessible for your
+diverse online audience.
+About this Scan
+2
+ +44 (0) 191 432 8092
+ info@reciteme.com
+ reciteme.com
+Book a demo
+
+WCAG Four Principles
+The key for website owners is to adopt a design and layout that is clear enough that everyone can use it. The FOUR
+principles are designed to help you think about the ways people use web content.
+1. Perceivable
+Information and user interface components must
+be presentable to users in ways they can perceive.
+2. Operable
+User interface components and navigation
+must be operable.
+3. Understandable
+Information and the operation of user interface
+must be understandable.
+4. Robust
+Content must be robust enough that it can be
+interpreted reliably by a wide variety of user
+agents, including assistive technologies.
+78
+Success Criteria
+The success criteria are what
+determine “conformance” to
+WAG and what a websites is
+tested against.
+ 
+396
+Techniques
+WCAG techniques are a set of
+specific test methods that can
+be used to achieve the
+accessibility standards.
+ 
+1000+
+Test
+Tests are created to run against
+techniques to see if a website
+conforms to WAG Success
+Criteria.
+Web Content Accessibility Guidelines (WCAG) ensure that people facing digital access
+barriers are not excluded from accessing online content. WCAG is considered to be the
+benchmark for website accessibility. Created by the World Wide Web Consortium (W3C),
+following WCAG guidelines is the best and the easiest way of making your website usable
+for all of your visitors.
+Levels of Compliance
+Following tests against WCAG guidelines and success criteria a website will be given a level
+of accessibility conformance. the globally acceptable level of ‘accessibility’ is Level AA.
+A
+'Must Do'
+Providing a basic level
+of accessibility on your
+website.
+AA
+‘Should Do’
+Industry accepted level
+of appropriate
+accessibility.
+AAA
+‘Could Do’
+For those that want to
+offer enhanced
+accessibility.
+How WCAG works
+3
+ +44 (0) 191 432 8092
+ info@reciteme.com
+ reciteme.com
+Book a demo
+
+It’s time to explore your website’s accessibility scan. Don’t worry, it’s not as complicated as it looks. Below is your
+dashboard where we have grouped your accessibility issues under ratings A, AA and AAA. Start off by tackling A-
+rated ‘fixes’ to boost your score and become an accessibility hero in no time!
+Your Scan Results
+Domain
+https://gogreen-2.vercel.app
+Date & Time
+12/05/2026, 05:07pm
+Issues Identified
+A
+1
+AA
+4
+AAA
+34
+Level A/AA: Checks
+Type
+Guideline
+Description
+Findings
+Contrast
+(Enhanced)
+1.4.6
+Text and images of text have a contrast ratio of 7:1.
+This does not ap...
+30
+Focus Order
+2.4.3
+When the order of the content is important to its
+meaning or operation...
+1
+Multiple Ways
+2.4.5
+There must be more than one way to locate a web
+page within a set of w...
+4
+Location
+2.4.8
+IUser can access information about their location
+within a set of web...
+4
+Domain Overview
+4
+ +44 (0) 191 432 8092
+ info@reciteme.com
+ reciteme.com
+Book a demo
+
+ Fix issue example
+G17 | Ensuring that a contrast ratio of at least 7:1 exists between text (and images of text) and bac...
+Description
+The objective of this technique is to make sure that users can read text that is presented over a background. This technique goes
+beyond the 4.5:1 contrast technique to provide a higher level of contrast to make it easier for people with low vision to read. If the
+background is a solid color (or all black or all white) then the contrast ratio of the text can be maintained by making sure that each of
+the text letters have a 7:1 contrast ratio with the background. If the background or the letters vary in relative luminance (or are
+patterned), then the background around the letters can be chosen or shaded so that the letters maintain a 7:1 contrast ratio with the
+background behind them even if they do not have that contrast ratio with the entire background. The contrast ratio can sometimes
+be maintained by changing the relative luminance of the letters as the relative luminance of the backg...
+Recite Me Recommends
+This technique explains that text should be easy
+to read when it is placed on top of a picture or a
+background. The goal is to make the contrast
+between the text and the background strong
+enough for people with low vision to read it
+comfortably.
+Code Snippet
+Element
+<a class="flex items-center justify-center w-max
+gap-2 h-12 sm:h-14 px-6 sm:px-8 rounded-full
+bg-accent text-white text-sm sm:text-base font-
+medium hover:bg-accent-2 hover:-translate-y-
+0.5 transition-all shadow-
+[0_0_20px_rgba(30,127,92,0.4)] group"
+href="/get-assessment">Get a Free
+Assessment<svg viewBox="0 0 24 24" aria-
+hidden="true" role="presentation"
+focusable="false" fill="none"
+stroke="currentColor" stroke-width="1.5" stroke-
+linecap="round" stroke-linejoin="round"
+class="size-4 text-white/85 group-
+hover:translate-x-0.5 group-hover:-translate-y-
+0.5 transition-transform"><path d="M7 17 17
+7"></path><path d="M8
+7h9v9"></path></svg></a>
+Text and images of text have a contrast ratio of 7:1. This does not apply to large text, where the
+ratio must be 4.5:1, and text that is part of an inactive user interface component, purely decorative,
+not visible to anyone or part of a picture that contains significant other visual content has no
+contrast requirements. Text contained within branding or logos is exempt.
+Contrast (Enhanced)
+1.4.6
+30
+Fixes
+5
+ +44 (0) 191 432 8092
+ info@reciteme.com
+ reciteme.com
+Book a demo
+
+ Fix issue example
+G17 | Ensuring that a contrast ratio of at least 7:1 exists between text (and images of text) and bac...
+Description
+The objective of this technique is to make sure that users can read text that is presented over a background. This technique goes
+beyond the 4.5:1 contrast technique to provide a higher level of contrast to make it easier for people with low vision to read. If the
+background is a solid color (or all black or all white) then the contrast ratio of the text can be maintained by making sure that each of
+the text letters have a 7:1 contrast ratio with the background. If the background or the letters vary in relative luminance (or are
+patterned), then the background around the letters can be chosen or shaded so that the letters maintain a 7:1 contrast ratio with the
+background behind them even if they do not have that contrast ratio with the entire background. The contrast ratio can sometimes
+be maintained by changing the relative luminance of the letters as the relative luminance of the backg...
+Recite Me Recommends
+This technique explains that text should be easy
+to read when it is placed on top of a picture or a
+background. The goal is to make the contrast
+between the text and the background strong
+enough for people with low vision to read it
+comfortably.
+Code Snippet
+Element
+<span class="text-[18px] sm:text-[22px] text-
+muted-2 ml-1 align-baseline">+</span>
+Text and images of text have a contrast ratio of 7:1. This does not apply to large text, where the
+ratio must be 4.5:1, and text that is part of an inactive user interface component, purely decorative,
+not visible to anyone or part of a picture that contains significant other visual content has no
+contrast requirements. Text contained within branding or logos is exempt.
+Contrast (Enhanced)
+1.4.6
+30
+Fixes
+6
+ +44 (0) 191 432 8092
+ info@reciteme.com
+ reciteme.com
+Book a demo
+
+ Fix issue example
+F44 | Failure of Success Criterion 2.4.3 due to using tabindex to create a tab order that does not pr...
+Description
+This document describes a failure that occurs when the tab order does not follow logical relationships and sequences in the
+content.Focusable elements like links and form elements have a tabindex attribute. The elements receive focus in ascending order of
+the value of the tabindex attribute. When the values of the tabindex attribute are assigned in a different order than the relationships
+and sequences in the content, the tab order no longer follows the relationships and sequences in the content.One of the most
+common causes of this failure occurs when editing a page where tabindex has been used. It is easy for the tab order and the content
+order to fall out of correspondence when the content is edited but the tabindex attributes are not updated to reflect the changes to
+the content.
+Recite Me Recommends
+Your Tab order, should not cause the document
+order to become confusing.
+Solution:
+Where possible, set your tab order to follow the
+order a reader may read the page of a book.
+Try to avoid 'jumping' the tab focus arround the
+page.
+Code Snippet
+Element
+<div role="region" aria-label="Project gallery"
+tabindex="0" class="focus-visible:outline-2
+focus-visible:outline-offset-2 focus-
+visible:outline-accent block xl:hidden col-span-1
+w-[100vw] -mx-6 mt-6 overflow-x-auto snap-x
+snap-mandatory [&amp;::-web...
+When the order of the content is important to its meaning or operation and it can be sequentially
+navigated, components that can be focused must receive the focus in an order that reflects the
+sequence.
+Focus Order
+2.4.3
+1
+Fixes
+7
+ +44 (0) 191 432 8092
+ info@reciteme.com
+ reciteme.com
+Book a demo
+
+ Fix issue example
+H59 | Using the link element and navigation tools
+Description
+The objective of this technique is to describe how the link element can provide metadata about the position of an HTML page within
+a set of Web pages or can assist in locating content with a set of Web pages. The value of the rel attributes indicates what type of
+relation is being described, and the href attribute provides a link to the document having that relation. Different link element rel
+values are used to create relationships:next: Refers to the next document in a linear sequence of documents.prev: Refers to the
+previous document in an ordered series of documents.
+Recite Me Recommends
+Your visitors are not all the same,. and some will
+want to use your site differently to others. Some
+will be happy to use a global navigation scheme
+to find their way around, others will prefer to
+use search, others still might wish to visit a
+sitemap first, some will use your pages
+sequentially.. the intent of this guideline is to
+make you aware of these differing use-cases,
+so that you can design solutions to satisfy them.
+Code Snippet
+Element
+<link rel="preload" as="image"
+imagesrcset="/_next/image?url=%2Fimages%2Flogo-
+mark-removebg.png&amp;w=128&amp;q=75 1x,
+/_next/image?url=%2Fimages%2Flogo-mark-
+removebg.png&amp;w=256&amp;q=75 2x">
+There must be more than one way to locate a web page within a set of web pages. This does not
+apply where the web page is the result of, or a step in, a process.
+Multiple Ways
+2.4.5
+4
+Fixes
+8
+ +44 (0) 191 432 8092
+ info@reciteme.com
+ reciteme.com
+Book a demo
+
+ Fix issue example
+H59 | Using the link element and navigation tools
+Description
+The objective of this technique is to describe how the link element can provide metadata about the position of an HTML page within
+a set of Web pages or can assist in locating content with a set of Web pages. The value of the rel attributes indicates what type of
+relation is being described, and the href attribute provides a link to the document having that relation. Different link element rel
+values are used to create relationships:next: Refers to the next document in a linear sequence of documents.prev: Refers to the
+previous document in an ordered series of documents.
+Recite Me Recommends
+Your visitors are not all the same,. and some will
+want to use your site differently to others. Some
+will be happy to use a global navigation scheme
+to find their way around, others will prefer to
+use search, others still might wish to visit a
+sitemap first, some will use your pages
+sequentially.. the intent of this guideline is to
+make you aware of these differing use-cases,
+so that you can design solutions to satisfy them.
+Code Snippet
+Element
+<link rel="preload" as="image"
+imagesrcset="/_next/image?url=%2Fimages%2Flogo-
+text-removebg.png&amp;w=640&amp;q=75 1x,
+/_next/image?url=%2Fimages%2Flogo-text-
+removebg.png&amp;w=1920&amp;q=75 2x">
+There must be more than one way to locate a web page within a set of web pages. This does not
+apply where the web page is the result of, or a step in, a process.
+Multiple Ways
+2.4.5
+4
+Fixes
+9
+ +44 (0) 191 432 8092
+ info@reciteme.com
+ reciteme.com
+Book a demo
+
+ Fix issue example
+H59 | Using the link element and navigation tools
+Description
+The objective of this technique is to describe how the link element can provide metadata about the position of an HTML page within
+a set of Web pages or can assist in locating content with a set of Web pages. The value of the rel attributes indicates what type of
+relation is being described, and the href attribute provides a link to the document having that relation. Different link element rel
+values are used to create relationships:next: Refers to the next document in a linear sequence of documents.prev: Refers to the
+previous document in an ordered series of documents.
+Recite Me Recommends
+Your visitors are not all the same,. and some will
+want to use your site differently to others. Some
+will be happy to use a global navigation scheme
+to find their way around, others will prefer to
+use search, others still might wish to visit a
+sitemap first, some will use your pages
+sequentially.. the intent of this guideline is to
+make you aware of these differing use-cases,
+so that you can design solutions to satisfy them.
+Code Snippet
+Element
+<link rel="preload" as="image"
+imagesrcset="/_next/image?url=%2Fimages%2Flogo-
+mark-removebg.png&amp;w=128&amp;q=75 1x,
+/_next/image?url=%2Fimages%2Flogo-mark-
+removebg.png&amp;w=256&amp;q=75 2x">
+IUser can access information about their location within a set of web pages.
+Location
+2.4.8
+4
+Fixes
+10
+ +44 (0) 191 432 8092
+ info@reciteme.com
+ reciteme.com
+Book a demo
+
+ Fix issue example
+H59 | Using the link element and navigation tools
+Description
+The objective of this technique is to describe how the link element can provide metadata about the position of an HTML page within
+a set of Web pages or can assist in locating content with a set of Web pages. The value of the rel attributes indicates what type of
+relation is being described, and the href attribute provides a link to the document having that relation. Different link element rel
+values are used to create relationships:next: Refers to the next document in a linear sequence of documents.prev: Refers to the
+previous document in an ordered series of documents.
+Recite Me Recommends
+Your visitors are not all the same,. and some will
+want to use your site differently to others. Some
+will be happy to use a global navigation scheme
+to find their way around, others will prefer to
+use search, others still might wish to visit a
+sitemap first, some will use your pages
+sequentially.. the intent of this guideline is to
+make you aware of these differing use-cases,
+so that you can design solutions to satisfy them.
+Code Snippet
+Element
+<link rel="preload" as="image"
+imagesrcset="/_next/image?url=%2Fimages%2Flogo-
+text-removebg.png&amp;w=640&amp;q=75 1x,
+/_next/image?url=%2Fimages%2Flogo-text-
+removebg.png&amp;w=1920&amp;q=75 2x">
+IUser can access information about their location within a set of web pages.
+Location
+2.4.8
+4
+Fixes
+11
+ +44 (0) 191 432 8092
+ info@reciteme.com
+ reciteme.com
+Book a demo
+
+Website Accessibility Checker
+Website accessibility and compliance made simple. The
+Recite Me Accessibility Checker identifies accessibility
+code issues and shows you exactly how to fix them
+through the power of AI.
+Book a Checker demo
+Plan
+Identify the scope of your digital
+landscape to determine which pages
+and documents need testing for
+compliance.
+Scan
+Conduct a comprehensive scan of your
+website against WCAG 2.2 success
+criteria to pinpoint accessibility issues.
+Fix
+Utilise AI-powered insights to prioritise
+and guide you on fixing issues for the
+most significant improvements in
+accessibility.
+Maintain
+Implement programmatic scanning to
+ensure ongoing compliance and that
+new content remains accessible to all
+users.
+Recite Me Assistive Toolbar
+Digital barriers stand in the way of visitors reading and understanding your online content.
+Create an inclusive experience online by providing assistive technology and language
+options to enable everyone to customise your website in ways that work for them.
+Book a Toolbar demo
+Recite Me’s accessibility platform is designed to ensure
+compliance with accessibility regulations and enhance user
+experiences. Kick-start your accessibility journey today with a
+free accessibility consultation.
+Book a demo
+Let's make your website
+accessible and compliant
+12
+ +44 (0) 191 432 8092
+ info@reciteme.com
+ reciteme.com
+Book a demo
+
+T: +44 (0) 191 432 8092
+E: info@reciteme.com
+W: www.reciteme.com
+Baltimore House,
+Baltic Business Quarter,
+Gateshead, NE8 3DF
+Believing in Accessibility for All

@@ -70,15 +70,23 @@ export default function RootLayout({
     >
       <head>
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-        <link rel="search" href="/sitemap-page" title="Site Index" />
-        <link rel="help" href="/contact" title="Contact" />
+        <link rel="index" href="/sitemap-page" title="Site Index" />
+        <link rel="search" href="/sitemap-page" title="Search Site Index" />
+        <link rel="contents" href="/sitemap-page" title="Table of Contents" />
+        <link rel="help" href="/contact" title="Contact GoGreen Solutions" />
       </head>
       <body className="bg-bg text-ink antialiased min-h-dvh flex flex-col">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[200] focus:px-4 focus:py-2 focus:rounded-full focus:bg-accent focus:text-white focus:text-sm focus:font-medium focus:shadow-lg"
+        >
+          Skip to main content
+        </a>
         <OrganizationJsonLd />
         <LocalBusinessJsonLd />
         <SmoothScroll />
         <Nav />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" className="flex-1">{children}</main>
         <Footer />
       </body>
     </html>
