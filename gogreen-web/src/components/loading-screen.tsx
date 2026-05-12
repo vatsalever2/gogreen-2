@@ -36,7 +36,7 @@ export function LoadingScreen({ onComplete }: { onComplete: () => void }) {
         <motion.div 
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 0.8, ease: "easeIn" } }}
-          className="fixed inset-0 z-[9999] bg-ink flex flex-col justify-center items-center text-accent font-mono text-sm sm:text-base px-6"
+          className="fixed inset-0 z-[9999] bg-ink flex flex-col justify-center items-center text-[#2fba82] font-mono text-sm sm:text-base px-6"
         >
           <div className="max-w-md w-full flex flex-col gap-2">
              {step >= 1 && (
@@ -50,7 +50,7 @@ export function LoadingScreen({ onComplete }: { onComplete: () => void }) {
                 </motion.div>
              )}
              {step >= 3 && (
-                <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="text-accent-3">
+                <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} className="text-[#2fba82]">
                    {">"} SYNCING TELEMETRY [||||||||||] 100%
                 </motion.div>
              )}
