@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Container } from "@/components/container";
@@ -156,10 +157,13 @@ function ProjectRow({
             <p className="mt-4 text-[15.5px] leading-relaxed text-white/85 max-w-[48ch]">
               {project.desc}
             </p>
-            <button className="mt-6 inline-flex items-center gap-2 text-sm font-medium border-b border-accent pb-1 hover:gap-3 transition-all">
-              Project details (on request)
+            <Link
+              href="/contact"
+              className="mt-6 inline-flex items-center gap-2 text-sm font-medium border-b border-accent pb-1 hover:gap-3 transition-all"
+            >
+              Request project details
               <ArrowUpRight className="size-4" />
-            </button>
+            </Link>
           </div>
         </div>
       </Container>
