@@ -6,6 +6,7 @@ import { ArrowUpRight } from "@/components/icons";
 import { LoadingScreen } from "@/components/loading-screen";
 import Image from "next/image";
 import Link from "next/link";
+import { blurDark } from "@/lib/shimmer";
 
 // ----------------------------------------------------------------------
 // DATA
@@ -71,6 +72,8 @@ export function Hero() {
                   fill 
                   className="object-cover blur-[80px] saturate-150" 
                   alt="" 
+                  placeholder="blur"
+                  blurDataURL={blurDark}
                 />
              </motion.div>
           </AnimatePresence>
@@ -155,6 +158,8 @@ export function Hero() {
                     className="object-cover" 
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     priority={idx === 0}
+                    placeholder="blur"
+                    blurDataURL={blurDark}
                   />
                   
                   {/* Overlay for unselected panels to make them recede visually */}
@@ -233,6 +238,8 @@ export function Hero() {
                         className="object-cover" 
                         sizes="(max-width: 1024px) 100vw"
                         priority={idx === 0}
+                        placeholder="blur"
+                        blurDataURL={blurDark}
                       />
                       <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-ink via-ink/80 to-transparent pointer-events-none" />
                       

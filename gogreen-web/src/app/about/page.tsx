@@ -4,6 +4,7 @@ import { PageHero } from "@/components/page-hero";
 import { Container } from "@/components/container";
 import { CtaSection } from "@/components/cta-section";
 import { site } from "@/lib/site";
+import { blurLight, blurDark } from "@/lib/shimmer";
 
 export const metadata: Metadata = {
   title: "About, Founder, Story & Team",
@@ -45,6 +46,8 @@ export default function AboutPage() {
               className="object-cover"
               sizes="(max-width: 1440px) 100vw, 1440px"
               priority
+              placeholder="blur"
+              blurDataURL={blurDark}
             />
           </div>
         </Container>
@@ -70,6 +73,8 @@ export default function AboutPage() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 480px"
+                  placeholder="blur"
+                  blurDataURL={blurLight}
                 />
               </div>
             </div>

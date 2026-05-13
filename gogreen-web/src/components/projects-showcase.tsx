@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Container } from "@/components/container";
 import { ArrowUpRight } from "@/components/icons";
+import { blurDark } from "@/lib/shimmer";
 
 type Project = {
   title: string;
@@ -133,6 +134,8 @@ function ProjectRow({
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 60vw"
+                placeholder="blur"
+                blurDataURL={blurDark}
               />
             </motion.div>
             <div className="absolute inset-0 bg-gradient-to-tr from-ink/40 via-transparent to-transparent" />

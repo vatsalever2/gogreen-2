@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "GoGreen Website <onboarding@resend.dev>",
+        from: "GoGreen Solutions <no-reply@gogreensolutions.co>",
         to: toEmail,
         reply_to: email,
         subject: `New inquiry from ${name} — ${scope}`,

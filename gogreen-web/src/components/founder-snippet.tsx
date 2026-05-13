@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Container } from "@/components/container";
 import { ButtonLink } from "@/components/button";
+import { blurLight } from "@/lib/shimmer";
 
 export function FounderSnippet() {
   return (
@@ -24,6 +25,8 @@ export function FounderSnippet() {
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 480px"
+                placeholder="blur"
+                blurDataURL={blurLight}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/30 via-transparent to-transparent" />
             </div>
