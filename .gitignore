@@ -1,0 +1,24 @@
+# ── Junk / working files at repo root ────────────────────────────────
+*.pdf
+report.md
+report5_text.txt
+GoGreen_Website_Build_Prompt_final.txt
+gogreensolutionsinc-logo-new-removebg-preview.png
+new-logo.jpeg
+
+# Original uncompressed source images (already copied & compressed into gogreen-web/public/images)
+gogreen images/
+
+# Agent skills (dev-only tooling)
+.agents/
+
+# ── Node / Next.js ────────────────────────────────────────────────────
+node_modules/
+.next/
+.env
+.env.local
+.env*.local
+
+# ── OS ────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
