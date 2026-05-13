@@ -216,14 +216,15 @@ export function Hero() {
 
            {/* RIGHT CONTENT: Mobile/Tablet Horizontal Scroll Gallery */}
            <div role="region" aria-label="Project gallery" className="block xl:hidden col-span-1 w-[100vw] -mx-6 mt-6">
-             <div tabIndex={0} className="overflow-x-auto snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+             <div className="overflow-x-auto snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
               <div className="flex gap-4 px-6 w-max pb-8">
                  {HERO_IMAGES.map((img, idx) => (
                    <div
                      key={idx}
+                     tabIndex={0}
                      role="img"
                      aria-label={`${img.tag}: ${img.metric} — ${img.desc}`}
-                     className="relative w-[85vw] sm:w-[60vw] lg:w-[45vw] h-[45vh] lg:h-[55vh] rounded-[32px] overflow-hidden snap-center border border-white/10 shrink-0 shadow-2xl"
+                     className="relative w-[85vw] sm:w-[60vw] lg:w-[45vw] h-[45vh] lg:h-[55vh] rounded-[32px] overflow-hidden snap-center border border-white/10 shrink-0 shadow-2xl focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-2"
                    >
                       <Image 
                         src={img.src} 
