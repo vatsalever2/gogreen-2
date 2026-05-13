@@ -216,7 +216,7 @@ export function Hero() {
 
            {/* RIGHT CONTENT: Mobile/Tablet Horizontal Scroll Gallery */}
            <div role="region" aria-label="Project gallery" className="block xl:hidden col-span-1 w-[100vw] -mx-6 mt-6">
-             <div className="overflow-x-auto snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+             <div tabIndex={0} className="overflow-x-auto snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
               <div className="flex gap-4 px-6 w-max pb-8">
                  {HERO_IMAGES.map((img, idx) => (
                    <div
