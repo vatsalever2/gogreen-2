@@ -31,13 +31,13 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
 
   return (
     <>
-      <article className="pt-36 lg:pt-44">
+      <article className="pt-12 lg:pt-16">
         <Container size="narrow">
           <Link
             href="/blog"
             className="text-[12px] uppercase tracking-[0.18em] text-muted hover:text-ink font-mono inline-flex items-center gap-2"
           >
-            <span aria-hidden>←</span> All insights
+            <span aria-hidden="true">←</span> All insights
           </Link>
           <div className="mt-8 text-[12px] uppercase tracking-[0.18em] text-muted-2 font-mono">
             {a.category} · {new Date(a.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })} · {a.readMin} min read
@@ -53,7 +53,7 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
             <div className="relative aspect-[16/8] rounded-3xl overflow-hidden border border-line">
               <Image
                 src={a.cover}
-                alt=""
+                alt={`Cover image for: ${a.title}`}
                 fill
                 className="object-cover"
                 sizes="(max-width: 1440px) 100vw, 1440px"

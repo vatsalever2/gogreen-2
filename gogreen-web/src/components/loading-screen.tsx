@@ -33,9 +33,12 @@ export function LoadingScreen({ onComplete }: { onComplete: () => void }) {
   return (
     <AnimatePresence>
       {step < 4 && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 0.8, ease: "easeIn" } }}
+          role="status"
+          aria-live="polite"
+          aria-label="Loading GoGreen Solutions"
           className="fixed inset-0 z-[9999] bg-ink flex flex-col justify-center items-center text-[#2fba82] font-mono text-sm sm:text-base px-6"
         >
           <div className="max-w-md w-full flex flex-col gap-2">

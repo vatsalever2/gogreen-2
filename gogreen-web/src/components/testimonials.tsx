@@ -46,12 +46,12 @@ export function Testimonials() {
           </div>
           <div className="lg:col-span-5 lg:pt-6 flex flex-col gap-2 text-[14px] text-muted">
             <div className="flex items-center gap-2">
-              <span className="flex">
+              <span className="flex" role="img" aria-label="5 out of 5 stars">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star key={i} className="size-4 text-accent" />
                 ))}
               </span>
-              <span className="text-ink font-medium">5.0</span>
+              <span className="text-ink font-medium" aria-hidden="true">5.0</span>
               <span>· Google Reviews</span>
             </div>
             <p>Reliability, technical depth, and the ability to solve in real-time.</p>
@@ -73,7 +73,7 @@ export function Testimonials() {
               transition={{ duration: 0.6, delay: i * 0.08 }}
               className="w-[85vw] sm:w-[45vw] lg:w-auto shrink-0 snap-center rounded-2xl border border-line bg-white p-7 lg:p-8 flex flex-col"
             >
-              <div className="flex items-center gap-1 text-accent">
+              <div className="flex items-center gap-1 text-accent" role="img" aria-label="5 out of 5 stars">
                 {Array.from({ length: 5 }).map((_, j) => (
                   <Star key={j} className="size-3.5" />
                 ))}

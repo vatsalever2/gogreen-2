@@ -64,6 +64,24 @@ export function Nav() {
     setOpen(null);
   }, [pathname]);
 
+  // Close dropdown on Escape key
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setOpen(null);
+        setMobile(false);
+      }
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, []);
+
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = mobile ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [mobile]);
+
   return (
     <>
       <div className="sticky top-0 z-50">
@@ -98,7 +116,7 @@ export function Nav() {
           <div className="flex h-16 items-center justify-between gap-6">
             <Logo />
 
-            <nav className="hidden lg:flex items-center gap-1" onMouseLeave={() => setOpen(null)}>
+            <nav aria-label="Main navigation" className="hidden lg:flex items-center gap-1" onMouseLeave={() => setOpen(null)}>
               {items.map((item) =>
                 item.children ? (
                   <div
@@ -107,8 +125,11 @@ export function Nav() {
                     onMouseEnter={() => setOpen(item.label)}
                   >
                     <button
+                      aria-expanded={open === item.label}
+                      aria-haspopup="true"
+                      onClick={() => setOpen(open === item.label ? null : item.label)}
                       className={cn(
-                        "px-3 h-9 rounded-full text-[13.5px] font-medium tracking-tight text-ink-2 hover:text-ink transition-colors flex items-center gap-1",
+                        "px-3 h-9 rounded-full text-[13.5px] font-medium tracking-tight text-ink-2 hover:text-ink transition-colors flex items-center gap-1 focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-2 focus-visible:rounded-full",
                         open === item.label && "text-ink",
                       )}
                     >
@@ -154,7 +175,7 @@ export function Nav() {
                     key={item.label}
                     href={item.href!}
                     className={cn(
-                      "px-3 h-9 inline-flex items-center rounded-full text-[13.5px] font-medium tracking-tight text-ink-2 hover:text-ink transition-colors",
+                      "px-3 h-9 inline-flex items-center rounded-full text-[13.5px] font-medium tracking-tight text-ink-2 hover:text-ink transition-colors focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-2",
                       pathname === item.href && "text-ink",
                     )}
                   >

@@ -43,8 +43,8 @@ export default function BlogPage() {
                 sizes="(max-width: 1024px) 100vw, 60vw"
                 priority
               />
-              <div className="absolute top-5 left-5 inline-flex items-center gap-2 rounded-full bg-ink/80 backdrop-blur px-3 py-1.5 text-[11px] uppercase tracking-[0.18em] text-white font-mono">
-                <span className="size-1.5 rounded-full bg-accent" /> Featured
+              <div className="absolute top-5 left-5 inline-flex items-center gap-2 rounded-full bg-ink/80 backdrop-blur px-3 py-1.5 text-[11px] uppercase tracking-[0.18em] text-white font-mono" aria-label="Featured article">
+                <span className="size-1.5 rounded-full bg-accent" aria-hidden="true" /> Featured
               </div>
             </div>
             <div className="lg:col-span-5">

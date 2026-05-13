@@ -40,20 +40,23 @@ export function PageHero({
       />
       <Container size="wide" className="relative">
         {breadcrumbs && (
-          <nav className={cn(
+          <nav aria-label="Breadcrumb" className={cn(
             "mb-8 flex items-center gap-2 text-[12px] uppercase tracking-[0.16em] text-muted-2 font-mono",
             align === "center" && "justify-center",
           )}>
-            {breadcrumbs.map((b, i) => (
-              <span key={i} className="inline-flex items-center gap-2">
-                {b.href ? (
-                  <Link href={b.href} className="hover:text-ink transition-colors">{b.label}</Link>
-                ) : (
-                  <span>{b.label}</span>
-                )}
-                {i < breadcrumbs.length - 1 && <span className="text-line-2">/</span>}
-              </span>
-            ))}
+            <ol className="flex items-center gap-2 list-none p-0 m-0">
+              <li><Link href="/" className="hover:text-ink transition-colors">Home</Link></li>
+              {breadcrumbs.map((b, i) => (
+                <li key={i} className="inline-flex items-center gap-2">
+                  <span className="text-line-2" aria-hidden="true">/</span>
+                  {b.href ? (
+                    <Link href={b.href} className="hover:text-ink transition-colors">{b.label}</Link>
+                  ) : (
+                    <span aria-current="page">{b.label}</span>
+                  )}
+                </li>
+              ))}
+            </ol>
           </nav>
         )}
         <div className={cn(

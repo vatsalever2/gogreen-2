@@ -34,7 +34,7 @@ export function SectionHeading({
           transition={{ duration: 0.5 }}
           className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-muted font-medium"
         >
-          <span className="h-px w-6 bg-accent" />
+          <span className="h-px w-6 bg-accent" aria-hidden="true" />
           {eyebrow}
         </motion.div>
       )}

@@ -59,7 +59,7 @@ export function ServicePageTemplate({ data }: { data: ServicePageData }) {
         >
           <Image
             src={data.heroImage}
-            alt=""
+            alt={`${data.eyebrow} service in action`}
             fill
             className="object-cover"
             sizes="(max-width: 1440px) 100vw, 1440px"

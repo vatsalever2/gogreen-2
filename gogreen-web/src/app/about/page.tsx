@@ -139,7 +139,7 @@ export default function AboutPage() {
                   <div className="col-span-3 sm:col-span-2 font-display text-[28px] sm:text-[34px] leading-none tabular tracking-tight">
                     {m.year}
                   </div>
-                  <div className="col-span-1 flex items-center justify-center pt-3">
+                  <div className="col-span-1 flex items-center justify-center pt-3" aria-hidden="true">
                     <div className="size-3 rounded-full bg-accent ring-4 ring-surface" />
                   </div>
                   <div className="col-span-12 sm:col-span-9">
