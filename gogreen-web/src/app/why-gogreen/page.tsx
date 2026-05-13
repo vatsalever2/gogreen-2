@@ -5,6 +5,7 @@ import { Container } from "@/components/container";
 import { CtaSection } from "@/components/cta-section";
 import { Shield, Clock, Layers, Award, Bolt, Building } from "@/components/icons";
 import { site } from "@/lib/site";
+import { blurDark } from "@/lib/shimmer";
 
 export const metadata: Metadata = {
   title: "Why GoGreen, 25-Year Warranty, 48-Hour SLA, In-House Scope",
@@ -112,6 +113,8 @@ export default function WhyGoGreenPage() {
               className="object-cover"
               sizes="(max-width: 1440px) 100vw, 1440px"
               priority
+              placeholder="blur"
+              blurDataURL={blurDark}
             />
           </div>
         </Container>

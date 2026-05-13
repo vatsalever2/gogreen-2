@@ -6,6 +6,7 @@ import { Container } from "@/components/container";
 import { CtaSection } from "@/components/cta-section";
 import { ArrowUpRight } from "@/components/icons";
 import { articles } from "@/lib/articles";
+import { blurLight } from "@/lib/shimmer";
 
 export const metadata: Metadata = {
   title: "Insights, Solar EPC, R&R, Asset Strategy",
@@ -42,6 +43,8 @@ export default function BlogPage() {
                 className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                 sizes="(max-width: 1024px) 100vw, 60vw"
                 priority
+                placeholder="blur"
+                blurDataURL={blurLight}
               />
               <div className="absolute top-5 left-5 inline-flex items-center gap-2 rounded-full bg-ink/80 backdrop-blur px-3 py-1.5 text-[11px] uppercase tracking-[0.18em] text-white font-mono" aria-label="Featured article">
                 <span className="size-1.5 rounded-full bg-accent" aria-hidden="true" /> Featured
@@ -84,6 +87,8 @@ export default function BlogPage() {
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                     sizes="(max-width: 1024px) 100vw, 50vw"
+                    placeholder="blur"
+                    blurDataURL={blurLight}
                   />
                 </div>
                 <div className="text-[11px] uppercase tracking-[0.18em] text-muted-2 font-mono">

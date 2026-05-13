@@ -7,6 +7,7 @@ import { ButtonLink } from "@/components/button";
 import { CtaSection } from "@/components/cta-section";
 import { articles, getArticle } from "@/lib/articles";
 import { ArrowUpRight, ArrowRight } from "@/components/icons";
+import { blurLight } from "@/lib/shimmer";
 
 export function generateStaticParams() {
   return articles.map((a) => ({ slug: a.slug }));
@@ -58,6 +59,8 @@ export default async function ArticlePage(props: PageProps<"/blog/[slug]">) {
                 className="object-cover"
                 sizes="(max-width: 1440px) 100vw, 1440px"
                 priority
+                placeholder="blur"
+                blurDataURL={blurLight}
               />
             </div>
           </Container>
