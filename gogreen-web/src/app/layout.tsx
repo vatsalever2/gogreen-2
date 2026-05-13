@@ -54,6 +54,21 @@ export const metadata: Metadata = {
     description:
       "Engineering-driven Solar EPC delivering commercial, DG and residential projects across the Mid-Atlantic with precision, safety and field-first execution.",
     siteName: "GoGreen Solutions",
+    images: [
+      {
+        url: "/images/working-1.jpg",
+        width: 1200,
+        height: 630,
+        alt: "GoGreen Solutions — Engineering-Driven Solar EPC",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GoGreen Solutions, Engineering-Driven Solar EPC",
+    description:
+      "Commercial, DG and residential solar EPC across the Mid-Atlantic. 5,000+ projects. 54+ MW installed.",
+    images: ["/images/working-1.jpg"],
   },
   robots: { index: true, follow: true },
 };

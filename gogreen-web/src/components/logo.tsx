@@ -18,27 +18,15 @@ export function Logo({
         className,
       )}
     >
-      <div className="inline-flex items-center gap-2 sm:gap-2.5">
-        <Image
-          src="/images/logo-mark-removebg.png"
-          alt=""
-          width={120}
-          height={120}
-          priority
-          aria-hidden
-          className="h-8 w-auto sm:h-9 select-none"
-          style={variant === "light" ? { filter: "brightness(0) invert(1)" } : undefined}
-        />
-        <Image
-          src="/images/logo-text-removebg.png"
-          alt="GoGreen Solutions"
-          width={640}
-          height={100}
-          priority
-          className="h-6 w-auto sm:h-7 select-none"
-          style={variant === "light" ? { filter: "brightness(0) invert(1)" } : undefined}
-        />
-      </div>
+      <Image
+        src="/images/new-logo.png"
+        alt="GoGreen Solutions"
+        width={1000}
+        height={300}
+        priority
+        className="h-9 w-auto sm:h-10 select-none"
+        style={variant === "light" ? { filter: "brightness(0) invert(1)" } : undefined}
+      />
     </Link>
   );
 }

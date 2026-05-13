@@ -254,7 +254,7 @@ export function ServicePageTemplate({ data }: { data: ServicePageData }) {
             Related capabilities
           </div>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-px bg-line border border-line rounded-3xl overflow-hidden">
-            {data.related.map((r) => (
+            {data.related.slice(0, 3).map((r) => (
               <Link
                 key={r.href}
                 href={r.href}

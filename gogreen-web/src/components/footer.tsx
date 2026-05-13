@@ -51,7 +51,7 @@ export function Footer() {
             "linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)",
           backgroundSize: "64px 64px",
         }}
-        aria-hidden
+        aria-hidden="true"
       />
       <Container size="wide">
         <div className="flex flex-col gap-12 sm:gap-16">
@@ -127,8 +127,14 @@ export function Footer() {
             <div>
               © {new Date().getFullYear()} {site.legalName}. All rights reserved.
             </div>
-            <div className="flex items-center gap-6">
-              <span>NABCEP PVIP · Master Electrician · Class A Contractor · OSHA Compliant</span>
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+              <span className="hidden sm:inline">NABCEP PVIP · Master Electrician · Class A Contractor · OSHA Compliant</span>
+              <Link href="/privacy-policy" className="hover:text-white transition-colors">
+                Privacy Policy
+              </Link>
+              <Link href="/terms-of-service" className="hover:text-white transition-colors">
+                Terms of Service
+              </Link>
             </div>
           </div>
         </div>

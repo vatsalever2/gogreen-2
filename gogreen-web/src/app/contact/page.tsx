@@ -65,7 +65,7 @@ export default function ContactPage() {
                       "linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)",
                     backgroundSize: "32px 32px",
                   }}
-                  aria-hidden
+                  aria-hidden="true"
                 />
                 <div className="relative">
                   <div className="text-[10px] uppercase tracking-[0.18em] text-white/50 font-mono">Service SLA</div>
