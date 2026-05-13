@@ -89,7 +89,7 @@ export function StatesSection() {
                 Don't see your state?
               </h3>
               <p className="mt-3 text-[14.5px] leading-relaxed text-muted max-w-sm">
-                We're actively evaluating new markets across the East Coast for commercial EPC and portfolio engagements. <Link href="/contact" className="text-accent underline underline-offset-4 decoration-accent/30 hover:decoration-accent transition-colors">Let's talk</Link>.
+                We're actively evaluating new markets across the East Coast for commercial EPC and portfolio engagements. <Link href="/contact" className="font-semibold text-ink underline underline-offset-4 hover:text-accent transition-colors">Let's talk</Link>.
               </p>
             </div>
           </motion.div>

@@ -221,10 +221,9 @@ export function Hero() {
                  {HERO_IMAGES.map((img, idx) => (
                    <div
                      key={idx}
-                     tabIndex={0}
                      role="img"
                      aria-label={`${img.tag}: ${img.metric} — ${img.desc}`}
-                     className="relative w-[85vw] sm:w-[60vw] lg:w-[45vw] h-[45vh] lg:h-[55vh] rounded-[32px] overflow-hidden snap-center border border-white/10 shrink-0 shadow-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-2"
+                     className="relative w-[85vw] sm:w-[60vw] lg:w-[45vw] h-[45vh] lg:h-[55vh] rounded-[32px] overflow-hidden snap-center border border-white/10 shrink-0 shadow-2xl"
                    >
                       <Image 
                         src={img.src} 
